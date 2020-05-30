@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":"changyan","storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+<script data-ad-client="ca-pub-1334509736068927" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <meta name="description" content="(adsbygoogle &#x3D; window.adsbygoogle || []).push({});   1 、前言使用github pages服务搭建博客的好处有：  全是静态文件，访问速度快； 免费方便，不用花一分钱就可以搭建一个自由的个人博客，不需要服务器不需要后台； 可以随意绑定自己的域名，不仔细看的话根本看不出来你的网站是基于github的； 数据绝对安全，基于githu">
+<meta property="og:type" content="article">
+<meta property="og:title" content="超详细hexo博客部署到github教程">
+<meta property="og:url" content="http://yoursite.com/2020/05/30/%E8%B6%85%E8%AF%A6%E7%BB%86hexo%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0github%E6%95%99%E7%A8%8B/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="(adsbygoogle &#x3D; window.adsbygoogle || []).push({});   1 、前言使用github pages服务搭建博客的好处有：  全是静态文件，访问速度快； 免费方便，不用花一分钱就可以搭建一个自由的个人博客，不需要服务器不需要后台； 可以随意绑定自己的域名，不仔细看的话根本看不出来你的网站是基于github的； 数据绝对安全，基于githu">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://uc2flg.ch.files.1drv.com/y4m9dWN80BsgWjE5qghAPziIvn9-JZihaB2Ala1TP9v7uC5dl_xNQeFMuqU3D0kAcXC15N4SqeyhrdnzbteHhgwYYDj2lbcgL5EKGb8SGV-6XASo2nYtadog4rnj0PxRlkK2omO0dFzpgWY2tnN-35UD8c_wt6RuGKLQkTDEdWqv24LgmWpKKoorllI3X4UiJdAE8iuF26AbHGRGeWsIjbKOg?width=886&height=582&cropmode=none">
+<meta property="og:image" content="https://ts2flg.ch.files.1drv.com/y4melIiow06telFusqYPNSvZkTZOkOp4iy8qs_ke7kHeKieC1x5DArrZqh1hJxZwsqrr8bjrW2RmXae3zuYWu1oGKerWw_iOtxOXBty053p91ZKE43mRZL54l8kIZIOufWgOFB7tRsYjlYt68juZD1nWGnKzP1_Iy9kd4pro4CEhurB2ADGcHVg4OO78hn7_khnr2VUllBrwjHHNcLKvDkoGQ?width=382&height=432&cropmode=none">
+<meta property="og:image" content="https://sy2flg.ch.files.1drv.com/y4mXvtusdNOlDGAc3T6W8uCo6yP20H9nSrVG0pHOpaFvhp7VgK45nboz3SfWZfCybH4YNSpqjW2-JY_SouTy2boh3FBP8kf5md2-gmRj9gJyHBU1SfakWZIDJoA8rlXlZ64cuK77Av4HCY4tKwLynW1PCaSMCIAzoZMEOZDMPnWJPDHXfyFNMe9ZL0vCGjJMPnT0e_dVEh-bMD1dOOkuZUpCw?width=382&height=437&cropmode=none">
+<meta property="og:image" content="https://6kfpaq.ch.files.1drv.com/y4mHE1Z0PdP-y_f8_NOYj8m_uQqouKJh7T7Xn4rhpxmxd2qKaMzbdyu5VUVwZCHDfSkjr_Dv3zUmrHNFooE-m7uqXsLeviVje958PkMGV4eAj79m_lA76r7MzOft02g0YWRxaGSjYN_Z61PY-2nUwAgAmiGH4R6E42UW6xGtsHplTVCyFlWvCbDBfHDaTiBmEE2rH_wn84NMZt1w74humYqLA?width=1041&height=247&cropmode=none">
+<meta property="og:image" content="https://wc2flg.ch.files.1drv.com/y4mPWtO-tO_gMEQK29HNCAi8fa6Wher4xjFiotxwOzlPmOKtjvz5aHwWxO44bXactx_3-nSEnW9037HknFAl6RXHgyzgAcJfa50iu4ymRwEpb4qfNNMAJJkrZL7W7YiXAEvPd3Hr9U6OPbd2hcztesSytM2s9m41kS2obVOxvNAntau2DfqGL-hT7JDvvBL2xa_BjNAa-DcD6chN5Z2F-4jRQ?width=987&height=545&cropmode=none">
+<meta property="og:image" content="https://5kfpaq.ch.files.1drv.com/y4mNv_S2v9NXI4wdFFLW4p9OC81TM2RXz8ztzJKjd7FJnDExbQDf_AG0v5pUJfWNN_zhUPhmKip9tt7R7tb-Nh1fDLw4FRVOlYuvHUqtXuAfC8fC8TV_9wi9SAXT1suV6Q-rEYbE8UFU86yljuD59a30ii0qQXATus4_HNOBUKoal1MIie9VOrsGX84DeZIUfUsSd3vCZUJaGm7st_ZEo1zRQ?width=1011&height=496&cropmode=none">
+<meta property="article:published_time" content="2020-05-30T09:55:23.117Z">
+<meta property="article:modified_time" content="2020-04-22T09:02:08.000Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="hexo">
+<meta property="article:tag" content="博客">
+<meta property="article:tag" content="网站">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://uc2flg.ch.files.1drv.com/y4m9dWN80BsgWjE5qghAPziIvn9-JZihaB2Ala1TP9v7uC5dl_xNQeFMuqU3D0kAcXC15N4SqeyhrdnzbteHhgwYYDj2lbcgL5EKGb8SGV-6XASo2nYtadog4rnj0PxRlkK2omO0dFzpgWY2tnN-35UD8c_wt6RuGKLQkTDEdWqv24LgmWpKKoorllI3X4UiJdAE8iuF26AbHGRGeWsIjbKOg?width=886&height=582&cropmode=none">
+
+<link rel="canonical" href="http://yoursite.com/2020/05/30/%E8%B6%85%E8%AF%A6%E7%BB%86hexo%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0github%E6%95%99%E7%A8%8B/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'en'
+  };
+</script>
+
+  <title>超详细hexo博客部署到github教程 | Hexo</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-52772343-4"></script>
+    <script>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-52772343-4');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="accessibility.nav_toggle">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Hexo</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/30/%E8%B6%85%E8%AF%A6%E7%BB%86hexo%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0github%E6%95%99%E7%A8%8B/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Author">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          超详细hexo博客部署到github教程
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Post created:2020-05-30 17:55:23" itemprop="dateCreated datePublished" datetime="2020-05-30T17:55:23+08:00">2020-05-30</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/2020/05/30/%E8%B6%85%E8%AF%A6%E7%BB%86hexo%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0github%E6%95%99%E7%A8%8B/" class="post-meta-item leancloud_visitors" data-flag-title="超详细hexo博客部署到github教程" title="post.views">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">post.views:</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+            <span class="post-meta-item" title="post.views" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">post.views:</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine:</span>
+    
+    <a title="valine" href="/2020/05/30/%E8%B6%85%E8%AF%A6%E7%BB%86hexo%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0github%E6%95%99%E7%A8%8B/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/05/30/%E8%B6%85%E8%AF%A6%E7%BB%86hexo%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0github%E6%95%99%E7%A8%8B/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<p><ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-1334509736068927"
+     data-ad-slot="4348838154"></ins></p>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<h1 id="1-、前言"><a href="#1-、前言" class="headerlink" title="1 、前言"></a>1 、前言</h1><p>使用github pages服务搭建博客的好处有：</p>
+<ol>
+<li>全是静态文件，访问速度快；</li>
+<li>免费方便，不用花一分钱就可以搭建一个自由的个人博客，不需要服务器不需要后台；</li>
+<li>可以随意绑定自己的域名，不仔细看的话根本看不出来你的网站是基于github的；</li>
+<li>数据绝对安全，基于github的版本管理，想恢复到哪个历史版本都行；</li>
+<li>博客内容可以轻松打包、转移、发布到其它平台；</li>
+<li>等等；</li>
+</ol>
+<a id="more"></a>
+
+<h3 id="1-1、工欲善其事，必先利其器"><a href="#1-1、工欲善其事，必先利其器" class="headerlink" title="1.1、工欲善其事，必先利其器"></a>1.1、工欲善其事，必先利其器</h3><p>在开始之前首先以下内容你已具备：</p>
+<ol>
+<li>一个github账号,没有的花可以去github.com注册一个，很简单的</li>
+<li>您的系统安装了nodejs,npm,git并且了解最基本的使用方法</li>
+</ol>
+<p>本文将使用以下环境：</p>
+<ul>
+<li>系统：ubuntu: Linux 5.3.0-45-generic linux x64</li>
+<li>hexo-cli: 3.1.0</li>
+<li>node: 12.16.1</li>
+<li>npm: 6.13.4</li>
+<li>git: 2.20.1</li>
+</ul>
+<h1 id="2、github配置："><a href="#2、github配置：" class="headerlink" title="2、github配置："></a>2、github配置：</h1><p>新建仓库:<br>新建一个名为<strong>你的用户名.github.io</strong>的仓库，比如说，如果你的github用户名是<strong>test</strong>，那么你就新建<strong>test.github.io</strong>的仓库</p>
+<p>需要注意：</p>
+<ul>
+<li>仓库名字必须是：username.github.io，其中username是你的用户名<br>如果不是这个格式不能使用<strong>username.github.io</strong>这个域名访问你的博客，如果你有自己域名可以忽略</li>
+</ul>
+<h3 id="2-1、本地配置："><a href="#2-1、本地配置：" class="headerlink" title="2.1、本地配置："></a>2.1、本地配置：</h3><p><strong>配置SSH key</strong><br>为什么要配置这个呢？因为你提交代码肯定要拥有你的github权限才可以，但是直接使用用户名和密码太不安全了，所以我们使用ssh key来解决本地和服务器的连接问题。</p>
+<p>$ cd ~/. ssh #检查本机已存在的ssh密钥<br>如果提示：No such file or directory 说明你是第一次使用git。</p>
+<p>ssh-keygen -t rsa -C “邮件地址”<br>然后连续3次回车，在用户目录会生成.ssh隐藏目录，打开用户目录，</p>
+<p><strong>显示隐藏文件的方法：</strong></p>
+<ul>
+<li>ubuntu：<strong>Ctrl+H</strong></li>
+<li>windwos: 控制面板-&gt;文件夹选项-&gt;查看-&gt;高级设置-&gt;选择<strong>显示隐藏的文件、文件夹和驱动器</strong>-&gt;确定</li>
+</ul>
+<div  class="center">  
+<img data-src="https://uc2flg.ch.files.1drv.com/y4m9dWN80BsgWjE5qghAPziIvn9-JZihaB2Ala1TP9v7uC5dl_xNQeFMuqU3D0kAcXC15N4SqeyhrdnzbteHhgwYYDj2lbcgL5EKGb8SGV-6XASo2nYtadog4rnj0PxRlkK2omO0dFzpgWY2tnN-35UD8c_wt6RuGKLQkTDEdWqv24LgmWpKKoorllI3X4UiJdAE8iuF26AbHGRGeWsIjbKOg?width=886&height=582&cropmode=none" alt="打开控制面板" style="zoom:50%;" />
+
+<img data-src="https://ts2flg.ch.files.1drv.com/y4melIiow06telFusqYPNSvZkTZOkOp4iy8qs_ke7kHeKieC1x5DArrZqh1hJxZwsqrr8bjrW2RmXae3zuYWu1oGKerWw_iOtxOXBty053p91ZKE43mRZL54l8kIZIOufWgOFB7tRsYjlYt68juZD1nWGnKzP1_Iy9kd4pro4CEhurB2ADGcHVg4OO78hn7_khnr2VUllBrwjHHNcLKvDkoGQ?width=382&height=432&cropmode=none" alt="打开查看标签"  style="zoom:65%;" />
+
+<img data-src="https://sy2flg.ch.files.1drv.com/y4mXvtusdNOlDGAc3T6W8uCo6yP20H9nSrVG0pHOpaFvhp7VgK45nboz3SfWZfCybH4YNSpqjW2-JY_SouTy2boh3FBP8kf5md2-gmRj9gJyHBU1SfakWZIDJoA8rlXlZ64cuK77Av4HCY4tKwLynW1PCaSMCIAzoZMEOZDMPnWJPDHXfyFNMe9ZL0vCGjJMPnT0e_dVEh-bMD1dOOkuZUpCw?width=382&height=437&cropmode=none" alt="找到'显示隐藏的文件、文件夹和驱动器'" style="zoom:65%;" />
+</div>
+
+<ul>
+<li><p>Mac: 打开终端输入以下命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"> 显示隐藏文件命令：</span><br><span class="line">defaults write com.apple.finder AppleShowAllFiles -boolean true ; killall Finder</span><br><span class="line"> 关闭显示隐藏文件命令：</span><br><span class="line"> defaults write com.apple.finder AppleShowAllFiles -boolean false ; killall Finder</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<p>如果不想麻烦可以直接使用如下命令复制id_rsa.pub公钥内容</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ubuntu:~$ cat .ssh&#x2F;id_rsa.pub</span><br><span class="line">ssh-rsa AAAAB3NzaC1yc2AAABgQC4ynFg9LU2wV6SH0e4IrhgO2pA6I+dZgN6t&#x2F;6nnZvXETEAPVDaI&#x2F;lo1PQJiosqhJtOoaTTOme53+dS0AtHZGa4wG0GY9CHkoij0W4UivsASW+O&#x2F;EpTfIhjDe06dnBtKS2xyId9gtuNloa9za4dP7nf95E&#x3D; email@qq.com</span><br></pre></td></tr></table></figure>
+
+<p><strong>github添加sshkey</strong>：</p>
+<p>浏览器打开<a href="https://www.github.com" target="_blank" rel="noopener" title="GitHub官网">GITHUB</a>,打开刚刚创建的仓库，找到Settings</p>
+<p><img data-src="https://6kfpaq.ch.files.1drv.com/y4mHE1Z0PdP-y_f8_NOYj8m_uQqouKJh7T7Xn4rhpxmxd2qKaMzbdyu5VUVwZCHDfSkjr_Dv3zUmrHNFooE-m7uqXsLeviVje958PkMGV4eAj79m_lA76r7MzOft02g0YWRxaGSjYN_Z61PY-2nUwAgAmiGH4R6E42UW6xGtsHplTVCyFlWvCbDBfHDaTiBmEE2rH_wn84NMZt1w74humYqLA?width=1041&height=247&cropmode=none" alt=""></p>
+<p>然后左侧选择<strong>Deploy keys</strong>–&gt;<strong>Add deploy key</strong></p>
+<p><img data-src="https://wc2flg.ch.files.1drv.com/y4mPWtO-tO_gMEQK29HNCAi8fa6Wher4xjFiotxwOzlPmOKtjvz5aHwWxO44bXactx_3-nSEnW9037HknFAl6RXHgyzgAcJfa50iu4ymRwEpb4qfNNMAJJkrZL7W7YiXAEvPd3Hr9U6OPbd2hcztesSytM2s9m41kS2obVOxvNAntau2DfqGL-hT7JDvvBL2xa_BjNAa-DcD6chN5Z2F-4jRQ?width=987&height=545&cropmode=none" alt=""></p>
+<p>然后将复制的.ssh/id_rsa.pub公钥内容，添加到GitHub deploy keys中，如下图：</p>
+<p><img data-src="https://5kfpaq.ch.files.1drv.com/y4mNv_S2v9NXI4wdFFLW4p9OC81TM2RXz8ztzJKjd7FJnDExbQDf_AG0v5pUJfWNN_zhUPhmKip9tt7R7tb-Nh1fDLw4FRVOlYuvHUqtXuAfC8fC8TV_9wi9SAXT1suV6Q-rEYbE8UFU86yljuD59a30ii0qQXATus4_HNOBUKoal1MIie9VOrsGX84DeZIUfUsSd3vCZUJaGm7st_ZEo1zRQ?width=1011&height=496&cropmode=none" alt=""></p>
+<h3 id="2-2测试ssh配置"><a href="#2-2测试ssh配置" class="headerlink" title="2.2测试ssh配置"></a>2.2测试ssh配置</h3><p>使用命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+
+<p>出现下面内容就说名配置成功了</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">-ubuntu:~$ ssh -T git@github.com</span><br><span class="line">Hi xxx&#x2F;xx.github.io! You&#39;ve successfully authenticated, but GitHub does not provide shell access.</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-3、配置环境"><a href="#2-3、配置环境" class="headerlink" title="2.3、配置环境"></a>2.3、配置环境</h3><p>1、安装git、nodejs 、npm</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install git nodejs npm</span><br></pre></td></tr></table></figure>
+
+<h1 id="3、安装hexo"><a href="#3、安装hexo" class="headerlink" title="3、安装hexo"></a>3、安装hexo</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g          #安装hexo</span><br><span class="line">hexo init blog  				#初始化hexo程序</span><br><span class="line">cd blog						#切换到blog目录</span><br><span class="line">npm install					#下载hexo程序到blog目录</span><br><span class="line">hexo server				#本地预览</span><br></pre></td></tr></table></figure>
+
+<p>hexo目录结构</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">hexo-install-directory</span><br><span class="line">├── CNAME</span><br><span class="line">├── _config.yml 				&#x2F;&#x2F;Hexo的配置文件，可以配置主题、语言等</span><br><span class="line">├── avatar.jpg</span><br><span class="line">├── db.json</span><br><span class="line">├── debug.log</span><br><span class="line">├── node_modules          &#x2F;&#x2F;hexo 插件库</span><br><span class="line">├── package.json</span><br><span class="line">├── public						&#x2F;&#x2F;执行hexo g命令后，生成的内容会在这里，包括所有的文章、页面、分类、tag等.</span><br><span class="line">│   ├── 2020</span><br><span class="line">│   ├── 404.html</span><br><span class="line">│   ├── Staticfile</span><br><span class="line">│   ├── archives</span><br><span class="line">│   ├── atom.xml</span><br><span class="line">│   ├── categories</span><br><span class="line">│   ├── css</span><br><span class="line">│   ├── images</span><br><span class="line">│   ├── index.html</span><br><span class="line">│   ├── js</span><br><span class="line">│   ├── page</span><br><span class="line">│   ├── sitemap.xml</span><br><span class="line">│   └── vendors</span><br><span class="line">├── scaffolds					&#x2F;&#x2F;保存着默认模板，自定义模板就是修改该目录下的文件</span><br><span class="line">│   ├── draft.md 				&#x2F;&#x2F;默认的草稿模板</span><br><span class="line">│   ├── page.md 				&#x2F;&#x2F;默认的页面模板</span><br><span class="line">│   └── post.md 				&#x2F;&#x2F;默认的文章模板</span><br><span class="line">├── source 						&#x2F;&#x2F;Hexo存放编辑页面的地方，可以使用vim或其他编辑器编辑这里的内容</span><br><span class="line">│   ├── 404.html   				&#x2F;&#x2F;自定义404页面，</span><br><span class="line">│   ├── Staticfile 				</span><br><span class="line">│   ├── _drafts					&#x2F;&#x2F;存放所有的草稿文件的目录</span><br><span class="line">│   ├── _posts					&#x2F;&#x2F;存放所有的文章文件的目录，用的最多，比如执行hexo n &quot;post_name&quot;之后，post_name这篇文章就存放在这个目录下</span><br><span class="line">│   ├── categories</span><br><span class="line">│   └── images					&#x2F;&#x2F;这是我自己定义的，用于存博客中的图片，当然也可以使用图床</span><br><span class="line">└── themes						&#x2F;&#x2F;Hexo的所有主题</span><br><span class="line">    ├── landscape				</span><br><span class="line">    └──  next					&#x2F;&#x2F;这是我目前用的主题</span><br></pre></td></tr></table></figure>
+<h2 id="3-1、hexo配置"><a href="#3-1、hexo配置" class="headerlink" title="3.1、hexo配置"></a>3.1、hexo配置</h2><p>打开hexo配置文件  <strong>_config.yml</strong>  (根目录)</p>
+<p>找到<strong>deploy</strong>按照以下格式配置</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https:&#x2F;&#x2F;hexo.io&#x2F;docs&#x2F;deployment.html</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:username&#x2F;username.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+<p>其他按需设置，这里就不详细介绍了</p>
+<h2 id="3-2、撰写博客"><a href="#3-2、撰写博客" class="headerlink" title="3.2、撰写博客"></a>3.2、撰写博客</h2><p>进入/source/_posts目录（或者使用命令：<strong>hexo new xxx</strong>来生成文章名为xxx的文章）</p>
+<p>新建<strong>xx.md</strong>文件（xx即是你要写的文章标题）</p>
+<p>使用markdown编辑其或者任意文本编辑器，使用markdown语法编写你的博客巴！</p>
+<h2 id="3-2生成并部署到github"><a href="#3-2生成并部署到github" class="headerlink" title="3.2生成并部署到github"></a>3.2生成并部署到github</h2><p>然后使用以下命令生成并部署到github</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo g  #生成静态页面</span><br><span class="line"></span><br><span class="line">hexo d  #部署到github</span><br></pre></td></tr></table></figure>
+
+<h1 id="4、结束"><a href="#4、结束" class="headerlink" title="4、结束"></a>4、结束</h1><p>至此博客已经部署完成，通过xxx.github.io来欣赏你的新博客。</p>
+<p>常用hexo命令:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">hexo new &quot;postName&quot; #新建文章</span><br><span class="line">hexo new page &quot;pageName&quot; #新建页面</span><br><span class="line">hexo generate #生成静态页面至public目录</span><br><span class="line">hexo server #开启预览访问端口（默认端口4000，&#39;ctrl + c&#39;关闭server）</span><br><span class="line">hexo deploy #部署到GitHub</span><br><span class="line">hexo help  # 查看帮助</span><br><span class="line">hexo version  #查看Hexo的版本</span><br><span class="line"></span><br><span class="line">缩写：</span><br><span class="line">hexo n &#x3D;&#x3D; hexo new</span><br><span class="line">hexo g &#x3D;&#x3D; hexo generate</span><br><span class="line">hexo s &#x3D;&#x3D; hexo server</span><br><span class="line">hexo d &#x3D;&#x3D; hexo deploy</span><br><span class="line"></span><br><span class="line">组合命令：</span><br><span class="line">hexo s -g #生成并本地预览</span><br><span class="line">hexo d -g #生成并上传</span><br></pre></td></tr></table></figure>
+
+    </div>
+
+    
+    
+    
+        <div class="reward-container">
+  <div></div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    Donate
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/wechat.jpg" alt="Author WeChat Pay">
+        <p>WeChat Pay</p>
+      </div>
+      
+      <div style="display: inline-block;">
+        <img src="/images/alipay.jpg" alt="Author Alipay">
+        <p>Alipay</p>
+      </div>
+
+  </div>
+</div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/hexo/" rel="tag"># hexo</a>
+              <a href="/tags/%E5%8D%9A%E5%AE%A2/" rel="tag"># 博客</a>
+              <a href="/tags/%E7%BD%91%E7%AB%99/" rel="tag"># 网站</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/05/30/ubuntu%E5%BE%AE%E4%BF%A1%E6%97%A0%E6%B3%95%E6%AD%A3%E5%B8%B8%E5%AE%89%E8%A3%85%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/" rel="prev" title="ubuntu微信无法正常安装的解决方法">
+      <i class="fa fa-chevron-left"></i> ubuntu微信无法正常安装的解决方法
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/05/30/%E8%BF%9C%E7%A8%8B%E5%88%A0%E9%99%A4github%E4%BB%93%E5%BA%93%E6%96%87%E4%BB%B6%E6%96%B9%E6%B3%95/" rel="next" title="远程删除github仓库文件方法">
+      远程删除github仓库文件方法 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 300-250 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1334509736068927"
+     data-ad-slot="8719787899"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+    <div class="comments" id="valine-comments"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 300-250 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1334509736068927"
+     data-ad-slot="8719787899"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-、前言"><span class="nav-number">1.</span> <span class="nav-text">1 、前言</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1、工欲善其事，必先利其器"><span class="nav-number">1.0.1.</span> <span class="nav-text">1.1、工欲善其事，必先利其器</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2、github配置："><span class="nav-number">2.</span> <span class="nav-text">2、github配置：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1、本地配置："><span class="nav-number">2.0.1.</span> <span class="nav-text">2.1、本地配置：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2测试ssh配置"><span class="nav-number">2.0.2.</span> <span class="nav-text">2.2测试ssh配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3、配置环境"><span class="nav-number">2.0.3.</span> <span class="nav-text">2.3、配置环境</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3、安装hexo"><span class="nav-number">3.</span> <span class="nav-text">3、安装hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#3-1、hexo配置"><span class="nav-number">3.1.</span> <span class="nav-text">3.1、hexo配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-2、撰写博客"><span class="nav-number">3.2.</span> <span class="nav-text">3.2、撰写博客</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-2生成并部署到github"><span class="nav-number">3.3.</span> <span class="nav-text">3.2生成并部署到github</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4、结束"><span class="nav-number">4.</span> <span class="nav-text">4、结束</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Author</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">11</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">categories</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">14</span>
+        <span class="site-state-item-name">tags</span>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="mailto:xussun@gmail.com" title="E-Mail → mailto:xussun@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.youtube.com/channel/UCRtopCqFwRJFKUThFpBCZWg" title="YouTube → https:&#x2F;&#x2F;www.youtube.com&#x2F;channel&#x2F;UCRtopCqFwRJFKUThFpBCZWg" rel="noopener" target="_blank"><i class="fab fa-youtube fa-fw"></i>YouTube</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 300-250 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1334509736068927"
+     data-ad-slot="8719787899"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Author</span>
+</div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="footer.total_visitors">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="footer.total_views">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+<script src="/js/bookmark.js"></script>
+
+
+
+
+  
+  <script>
+    (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : false,
+      appId      : 'x9IXEgpGg7raQsmKl28eO5rC-MdYXbMMI',
+      appKey     : 'CAJnd245xaA4xdoESxf3MAJu',
+      placeholder: "给我的文章加点评论吧~",
+      avatar     : 'mm',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : true,
+      lang       : '' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : false,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
+</script>
+
+</body>
+</html>

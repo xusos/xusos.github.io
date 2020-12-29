@@ -764,4 +764,4 @@ kramdown: # 见<https://kramdown.gettalong.org/options.html>
 #  math_engine: mathjax
 #  syntax_highlighter: rouge
 
-theme: jekyll-theme-cayman
+theme: jekyll-theme-slate

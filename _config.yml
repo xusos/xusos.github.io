@@ -4,7 +4,7 @@ description: | # 头像背后的信息（html格式），<br/>代表换行
   水野爱<br/>
   HPC<br/>
   田宫例四驱车<br/>
-  <a href="mailto:i@loeso.com">
+  <a href="mailto:admin@loeso.com">
     <i class="fas fa-envelope"></i>
   </a>
   <a href="https://github.com/wu-kan">
@@ -107,7 +107,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                     "hidden": true,
                     "night": "for(let i=7; i<16; ++i) if(document.body.classList.contains(`theme-base-0`+i.toString(16))) { document.body.classList.remove(`theme-base-0`+i.toString(16)); document.body.classList.add(`theme-base-0`+((i-6)%9+7).toString(16)); break; }",
                     "content": {
-                      "link": ["https:\/\/jekyll-theme-WuK.wu-kan.cn"],
+                      "link": ["https:\/\/www.loeso.com"],
                       "skin": ["要换成我的朋友吗？", "让她放个假吧~"],
                       "hidden": true,
                       "custom": [{
@@ -630,9 +630,9 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                 var profile = "admin@loeso.com";
                 var usage = "payment";
                 var wechat = "wxp://f2f0ML14eLwBfkmT9ouDh5gBATumsAU68Tnj";
-                var tenpay = "https://i.qianbao.qq.com/wallet/sqrcode.htm?m=tenpay&f=wallet&a=1&ac=CAEQ77zFwQMY-6u57gU%3D_xxx_sign&u=942759535&n=%E8%94%9A";
+                var tenpay = "https://i.qianbao.qq.com/";
                 var alipay = "https://qr.alipay.com/fkx09193s9esfmbmlxeki42?t=1609258849370";
-                var paypal = "https://paypal.me/wukan0621";
+                var paypal = "https://paypal.me/cntingtang";
                 var multilingual = false;
                 var branding = false;
                 var title = "选择你的支付方式";
@@ -707,7 +707,6 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                 homePageUrl='/'
                 homePageName='回到我的主页'
               ></script>
-
 compress_html: # <https://github.com/penibelst/jekyll-compress-html>
   clippings: all
   comments: [] # 注释不能压缩，否则 reveal.js 的 ppt切屏受影响

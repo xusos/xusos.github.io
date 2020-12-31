@@ -31,7 +31,9 @@
 
 <!-- .slide vertical=true -->
 
-- [My-YouTuBe-Channel](https://www.youtube.com/channel/UCRtopCqFwRJFKUThFpBCZWg)[![Star](https://www.facebook.com/profile.php?id=100024674475322)](https://www.facebook.com/profile.php?id=100024674475322)[![Fork](IEcnn)](https://www.iecnn.com)
+- [My-YouTuBe-Channel](https://www.youtube.com/channel/UCRtopCqFwRJFKUThFpBCZWg)[![Star](https://img.shields.io/github/stars/wu-kan/wu-kan.github.io.svg)](https://www.facebook.com/profile.php?id=100024674475322)[![Fork](https://img.shields.io/github/forks/wu-kan/wu-kan.github.io.svg)](https://www.iecnn.com)
+
+
 
 <!-- .slide -->
 

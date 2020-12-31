@@ -31,7 +31,7 @@
 
 <!-- .slide vertical=true -->
 
-- [My-YouTuBe-Channel](https://www.youtube.com/channel/UCRtopCqFwRJFKUThFpBCZWg)[![FaceBook](https://img.shields.io/badge/Facebook-loeso.com-green)](https://www.facebook.com/profile.php?id=100024674475322)[![OtherWeb](https://img.shields.io/github/forks/wu-kan/wu-kan.github.io.svg)](https://www.iecnn.com)
+- [My-YouTuBe-Channel](https://www.youtube.com/channel/UCRtopCqFwRJFKUThFpBCZWg)[![FaceBook](https://img.shields.io/website?label=Facebook&logo=Facebook&style=plastic&url=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D100024674475322)](https://www.facebook.com/profile.php?id=100024674475322)[![OtherWeb](https://img.shields.io/github/forks/wu-kan/wu-kan.github.io.svg)](https://www.iecnn.com)
 
 
 

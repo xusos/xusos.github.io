@@ -31,7 +31,9 @@
 
 <!-- .slide vertical=true -->
 
-- [YouTuBe](https://www.youtube.com/channel/UCRtopCqFwRJFKUThFpBCZWg)[![FaceBook](https://www.facebook.com/profile.php?id=100024674475322)](https://www.facebook.com/profile.php?id=100024674475322)[![Fork](IEcnn)](https://www.iecnn.com)
+- [YouTuBe](https://www.youtube.com/channel/UCRtopCqFwRJFKUThFpBCZWg)
+[![Star](https://www.facebook.com/profile.php?id=100024674475322)](https://www.facebook.com/profile.php?id=100024674475322)
+[![Fork](IEcnn)](https://www.iecnn.com)
 
 <!-- .slide -->
 

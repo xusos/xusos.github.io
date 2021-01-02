@@ -81,3 +81,4 @@
 - **Linux**, Familiar&Learning
 - **Git**, Familiar
 - **VSCode**, Familiar
+- **Clion**,  Familiar

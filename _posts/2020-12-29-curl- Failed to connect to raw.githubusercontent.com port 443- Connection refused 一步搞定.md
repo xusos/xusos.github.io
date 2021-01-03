@@ -1,11 +1,10 @@
 ---
-title: 一步搞定curl: (7) Failed to connect to raw.githubusercontent.com port 443: Connection refused错误
-date: 2020-12-30 23:00:25
+title: 一步搞定 curl: (7) Failed to connect to raw.githubusercontent.com port 443: Connection refused错误
+date: 2020-12-29 23:00:25
 categories: 技术
 tags: 
-	- Homebrew
-	- Mac
-	
+- Homebrew
+- Mac
 ---
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -24,5 +23,5 @@ curl: (7) Failed to connect to raw.githubusercontent.com port 443: Connection re
 
 #一句命令搞定，国内的镜像地址
 ```bash
-/bin/zsh -c "$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)"
+/bin/zsh -c "$(curl -fsSL https://gitee.com/xusoso/HomebrewCN/raw/master/Homebrew.sh)"
 ```

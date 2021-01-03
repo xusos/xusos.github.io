@@ -11,7 +11,7 @@ description: | # 头像背后的信息（html格式），<br/>代表换行
     <i class="fab fa-github"></i>
   </a>
   <a href="https://www.youtube.com/channel/UCRtopCqFwRJFKUThFpBCZWg">
-    <i class="fas fa-chart-bar"></i>
+    <i class="fas fa-youtube-play"></i>
   </a>
   <iframe
     src="https://music.163.com/outchain/player?type=0&id=155059595&auto=0&height=32"
@@ -55,12 +55,12 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
             - | # 网站小图标，可换成你自己的图片，改href中的部分即可
               <link
                 rel="apple-touch-icon-precomposed"
-                href="https://gravatar.loli.net/avatar/289efba375d63424de3c49569c446744?s=320"
+                href="https://raw.githubusercontent.com/xusos/xusos.github.io/master/image/touxiang.jpg"
               />
               <link
                 rel="shortcut
                 icon"
-                href="https://gravatar.loli.net/avatar/289efba375d63424de3c49569c446744?s=32"
+                href="https://raw.githubusercontent.com/xusos/xusos.github.io/master/image/touxiang.jpg"
               />
             - | # 来自lanyon的页面样式，不要改
               <link

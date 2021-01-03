@@ -1,8 +1,10 @@
 ---
 title: centos8解决不支持NTFS
-date: 2020-04-19 22:56:25
-categories:
+categories: 技术
 tags:
+- cetnos
+- NTFS
+— NTFS-3g
 ---
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <ins class="adsbygoogle"
@@ -19,18 +21,18 @@ tags:
 下载NTFS-3G：
 https://www.tuxera.com/community/open-source-ntfs-3g/
     下载好的安装包，解压，进入文件夹，打开terminal
-    ```
+```bash
     ./configure
     make
     make install #OR 'sudo make install'
-    ```
-# 新建文件
 ```
+# 新建文件
+```bash
 touch /sbin/mount.ntfs
 ```
 
 编辑，输入以下内容
-```
+```bash
 vi /sbin/mount.ntfs
 文档内容：
   #!/bin/sh  
@@ -38,7 +40,7 @@ vi /sbin/mount.ntfs
 ```
 保存并退出
 # 修改权限
-```
+```bash
 chmod a+x /sbin/mount.ntfs
 ```
 # Done !

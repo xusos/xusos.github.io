@@ -1,8 +1,9 @@
 ---
-title: fedora-提升dnf安装速度的方法
+title: fedora提升dnf安装速度的方法
 date: 2020-04-21 22:56:25
-categories:
+categories: 技术
 tags:
+- fedora
 ---
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <ins class="adsbygoogle"

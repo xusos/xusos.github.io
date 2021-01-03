@@ -1,11 +1,13 @@
 ---
 title: 解决linux无法读取NTFS分区
+date: 2020-04-19 23:00:25
 categories: 技术
 tags:
 - cetnos
 - NTFS
 — NTFS-3g
 ---
+
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <ins class="adsbygoogle"
      style="display:block; text-align:center;"

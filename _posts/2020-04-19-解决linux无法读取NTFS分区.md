@@ -1,5 +1,5 @@
 ---
-title: centos8解决不支持NTFS
+title: 解决linux无法读取NTFS分区
 categories: 技术
 tags:
 - cetnos

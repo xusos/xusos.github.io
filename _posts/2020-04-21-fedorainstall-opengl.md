@@ -1,5 +1,5 @@
 ---
-title: fedorainstall-opengl
+title: fedora安装OpenGL
 date: 2020-04-20 14:22:48
 categories:
 tags:
@@ -17,7 +17,7 @@ tags:
 
 
 Fedora和Ubuntu下安装OpenGL开发环境配置
-	我整理的）OpenGL开发库的详细介绍
+	我整理的OpenGL开发库的详细介绍
 	fedora23 安装OpenGL
 
 开发OpenGL工程需要3个库文件和对应的头文件：
@@ -25,11 +25,13 @@ libglut.so,libGLU.so,libGL.so， gl.h ，glu.h， glut.h
 使用locate命令可以进行定位
 
 安装开发包(需要3个开发包)：
-
+```bash
     sudo dnf install mesa-libGL-devel mesa-libGLU-devel //这两个是opengl核心库
     sudo dnf install freeglut-devel //OpenGL Utility ToolKit
+```
 
 安装完之后用rpm命令验证安装包和查询安装的文件以及安装在什么位置（以glut-devel为例）：
+```bash
 [root@localhost etc]# rpm -qa | grep glut
 freeglut-devel-2.6.0-1.fc12.i686
 [root@localhost etc]# rpm -ql freeglut-devel
@@ -38,9 +40,9 @@ freeglut-devel-2.6.0-1.fc12.i686
 /usr/include/GL/freeglut_std.h
 /usr/include/GL/glut.h
 /usr/lib/libglut.so
-
-测试程序：
 ```
+测试程序：
+```bash
 #include<GL/glut.h>
 void init(void)
 {
@@ -70,22 +72,22 @@ int main(int argc, char *argv[])
     glutMainLoop();
     return 0;
 }
-
+```
 
 编译连接生成：
 
  
 
-C++编译器编译生成：$g++ Test.cpp -o test  -l GL -l GLU -l glut
+C++编译器编译生成：```$g++ Test.cpp -o test  -l GL -l GLU -l glut```
 
  
 
-C编译器编译生成     ：$gcc Test.cpp -o test  -l GL -l GLU -l glut
+C编译器编译生成：```$gcc Test.cpp -o test  -l GL -l GLU -l glut```
 
 编译成功会输出名为test的执行文件， 接下来可以执行test文件： $ ./test
 
 
-```
+```bash
 //Test.cpp
 #include <GL/glut.h>
  

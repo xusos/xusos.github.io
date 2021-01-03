@@ -63,8 +63,9 @@ tags:
 
 **配置SSH key**
 为什么要配置这个呢？因为你提交代码肯定要拥有你的github权限才可以，但是直接使用用户名和密码太不安全了，所以我们使用ssh key来解决本地和服务器的连接问题。
-
+```bash
 $ cd ~/. ssh #检查本机已存在的ssh密钥
+```
 如果提示：No such file or directory 说明你是第一次使用git。
 
 ssh-keygen -t rsa -C "邮件地址"
@@ -83,7 +84,7 @@ ssh-keygen -t rsa -C "邮件地址"
 
 - Mac: 打开终端输入以下命令：
 
-  ```
+```bash
    显示隐藏文件命令：
   defaults write com.apple.finder AppleShowAllFiles -boolean true ; killall Finder
    关闭显示隐藏文件命令：
@@ -92,7 +93,7 @@ ssh-keygen -t rsa -C "邮件地址"
 
 如果不想麻烦可以直接使用如下命令复制id_rsa.pub公钥内容
 
-```
+```bash
 ubuntu:~$ cat .ssh/id_rsa.pub
 ssh-rsa AAAAB3NzaC1yc2AAABgQC4ynFg9LU2wV6SH0e4IrhgO2pA6I+dZgN6t/6nnZvXETEAPVDaI/lo1PQJiosqhJtOoaTTOme53+dS0AtHZGa4wG0GY9CHkoij0W4UivsASW+O/EpTfIhjDe06dnBtKS2xyId9gtuNloa9za4dP7nf95E= email@qq.com
 
@@ -116,13 +117,13 @@ ssh-rsa AAAAB3NzaC1yc2AAABgQC4ynFg9LU2wV6SH0e4IrhgO2pA6I+dZgN6t/6nnZvXETEAPVDaI/
 
 使用命令：
 
-```
+```bash
 ssh -T git@github.com
 ```
 
 出现下面内容就说名配置成功了
 
-```
+```bash
 -ubuntu:~$ ssh -T git@github.com
 Hi xxx/xx.github.io! You've successfully authenticated, but GitHub does not provide shell access.
 ```
@@ -131,13 +132,13 @@ Hi xxx/xx.github.io! You've successfully authenticated, but GitHub does not prov
 
 1、安装git、nodejs 、npm
 
-```
+```bash
 sudo apt install git nodejs npm
 ```
 
 # 3、安装hexo
 
-```
+```bash
 npm install hexo-cli -g          #安装hexo
 hexo init blog  				#初始化hexo程序
 cd blog						#切换到blog目录
@@ -147,7 +148,7 @@ hexo server				#本地预览
 
 hexo目录结构
 
-```
+```bash
 hexo-install-directory
 ├── CNAME
 ├── _config.yml 				//Hexo的配置文件，可以配置主题、语言等
@@ -189,7 +190,7 @@ hexo-install-directory
 打开hexo配置文件  **_config.yml**  (根目录)
 
 找到**deploy**按照以下格式配置
-```
+```bash
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
@@ -202,29 +203,19 @@ deploy:
 ## 3.2、撰写博客
 
 进入/source/_posts目录（或者使用命令：**hexo new xxx**来生成文章名为xxx的文章）
-
 新建**xx.md**文件（xx即是你要写的文章标题）
-
 使用markdown编辑其或者任意文本编辑器，使用markdown语法编写你的博客巴！
-
 ## 3.2生成并部署到github
-
-
 然后使用以下命令生成并部署到github
-
-```
+```bash
 hexo g  #生成静态页面
 
 hexo d  #部署到github
 ```
-
 # 4、结束
-
 至此博客已经部署完成，通过xxx.github.io来欣赏你的新博客。
-
 常用hexo命令:
-
-```
+```bash
 hexo new "postName" #新建文章
 hexo new page "pageName" #新建页面
 hexo generate #生成静态页面至public目录

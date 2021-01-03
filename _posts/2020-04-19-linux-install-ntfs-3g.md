@@ -1,6 +1,6 @@
 ---
 title: centos8解决不支持NTFS
-categories:
+categories: 技术
 tags:
 - cetnos
 - NTFS

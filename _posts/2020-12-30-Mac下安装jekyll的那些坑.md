@@ -1,5 +1,5 @@
 ---
-tittle: Mac下安装jekyll的那些坑
+title: Mac下安装jekyll的那些坑
 categories: 技术
 tags:
 - Mac

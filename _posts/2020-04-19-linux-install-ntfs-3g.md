@@ -1,8 +1,10 @@
 ---
 title: centos8解决不支持NTFS
-date: 2020-04-19 22:56:25
 categories:
 tags:
+- cetnos
+- NTFS
+— NTFS-3g
 ---
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <ins class="adsbygoogle"

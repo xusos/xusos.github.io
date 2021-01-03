@@ -7,13 +7,23 @@ tags:
 - jekyll
 ---
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-1334509736068927"
+     data-ad-slot="4348838154"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
-   今天踩坑了，用gem安装jekyll的时候各种报错，网上的一些解决方法，要不就是行不通，要不就是零散破碎不完整，花了点时间把这个问题搞定，整理完之后顺便分享一下，帮助大家节省一点时间。
+&nbsp;&nbsp;今天踩坑了，用gem安装jekyll的时候各种报错，网上的一些解决方法，要不就是行不通，要不就是零散破碎不完整，花了点时间把这个问题搞定，整理完之后顺便分享一下，帮助大家节省一点时间。
 When using gem to install or update some packages, there may be some wired problems and messages pop-up. If you met same problems like me, here are the reason and solution.
 起因(Start)
 构建Github Pages免不了要和jekyll打交道，至于它是什么，看这里。网上有个不错的教程，可惜仅限中文，跟着教程走，在安装jekyll的时候出了问题。偏偏又是我，好吧已经习惯了。先看看是什么问题：
 
-When I try to build up my github pages, I need to install jekyll, (what is it? click here) and when I install jekyll, the below message pop-up. Apparentlly, something wrong!
+&nbsp;&nbsp;When I try to build up my github pages, I need to install jekyll, (what is it? click here) and when I install jekyll, the below message pop-up. Apparentlly, something wrong!
 ```bash
 sudo gem install jekyll
 
@@ -39,7 +49,7 @@ sudo xcodebuild -license accept
 ```
 安装完之后，然并卵（虽然上面的没有解决这个问题还是建议大家安装一下xcode command line tool）。做了些search后发现，找不到header file的根本原因是header file的地址变了。重新分配一下地址可能会起到作用。
 
-Thank you and it does not work! (xcode command line tool is necessary so please install anyway). After some searches, I found the true reason is header file location changed. re-assign the location may work.
+&nbsp;&nbsp;Thank you and it does not work! (xcode command line tool is necessary so please install anyway). After some searches, I found the true reason is header file location changed. re-assign the location may work.
 ```bash
 On Xcode 11 / macOS Catalina, the header files are no longer in the old location:
 /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg
@@ -72,7 +82,7 @@ Fetching bundler-2.0.2.gem
 ERROR:  While executing gem ... (Gem::FilePermissionError)
     You don't have write permissions for the /Library/Ruby/Gems/2.3.0 directory.
 ```
-原因即字面意思, 就是 gem 要往某个神奇的目录写文件但是你的权限不够。 因为你使用的是Apple家自带的ruby, 在尝试往 Apple自家的库中塞东西。所以就算你用sudo也不行，网上有人提供一些方法帮助做强制修改的，但是个人不推荐，因为更新系统的时候很容易出现兼容性问题。
+&nbsp;&nbsp;原因即字面意思, 就是 gem 要往某个神奇的目录写文件但是你的权限不够。 因为你使用的是Apple家自带的ruby, 在尝试往 Apple自家的库中塞东西。所以就算你用sudo也不行，网上有人提供一些方法帮助做强制修改的，但是个人不推荐，因为更新系统的时候很容易出现兼容性问题。
 
 The reason is Apple does not allow you to change its own libraries even using sudo. Well there are some articles will help you force to change but it is not recommand because when you upgrade system, there may be compatiable problems happend. So, don’t do that!
 

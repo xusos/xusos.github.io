@@ -8,6 +8,17 @@ tags:
 	
 ---
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-1334509736068927"
+     data-ad-slot="4348838154"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 curl: (7) Failed to connect to raw.githubusercontent.com port 443: Connection refused 一步搞定！！！
 再网上搜了一堆方法不管用，结果一步就能搞定！
 

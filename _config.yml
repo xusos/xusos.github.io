@@ -561,11 +561,10 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                     "el": x,
                     "appId": "x9IXEgpGg7raQsmKl28eO5rC-MdYXbMMI",
                     "appKey": "CAJnd245xaA4xdoESxf3MAJu",
-                    "placeholder": "在这里留下您宝贵的评论吧！",
+                    "placeholder": "在这里留下您宝贵的评论吧!",
                     "requiredFields": ["nick","mail"],
                     "visitor": true,
-                    "recordIP": true,
-                    "avatar": mm,
+                    "recordIP": true
                   })'
             ></script>
         post:

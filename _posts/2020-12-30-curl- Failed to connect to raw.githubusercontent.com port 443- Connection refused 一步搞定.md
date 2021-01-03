@@ -1,6 +1,6 @@
 ---
 title: 一步搞定curl: (7) Failed to connect to raw.githubusercontent.com port 443: Connection refused错误
-date: 2020-12-30 23:00:25
+date: 2020-12-29 23:00:25
 categories: 技术
 tags: 
 	- Homebrew

@@ -155,11 +155,11 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                   background-position: 0% 0%;
                   background-repeat: no-repeat;
                   background-attachment: fixed;
-                  background-image: url(https://Mizuno-Ai.wu-kan.cn/pixiv/74559485_p1.webp);
+                  background-image: url(https://raw.githubusercontent.com/xusos/xusos.github.io/master/image/wallpaper/200.webp);
                 }
                 @media (min-aspect-ratio: 2400/1850) {
                   .wrap {
-                    background-image: url(https://Mizuno-Ai.wu-kan.cn/pixiv/71932901_p0.webp);
+                    background-image: url(https://raw.githubusercontent.com/xusos/xusos.github.io/master/image/wallpaper/200.webp);
                   }
                 }
                 .sidebar-overlay #sidebar-checkbox:checked ~ .wrap {
@@ -223,7 +223,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
             disable: false # 是否不显示sidebar
             avatar: # 侧边栏显示的头像
               enable: true
-              img: https://gravatar.loli.net/avatar/289efba375d63424de3c49569c446744?s=320 # 头像的地址
+              img: https://raw.githubusercontent.com/xusos/xusos.github.io/master/image/touxiang.jpg # 头像的地址
             nav: # 导航部分的内容，你也可以自己增加文字、图标（来自fontawesome）和对应的链接
               - title: '<i class="fas fa-home fa-fw"></i> 首页'
                 href: /
@@ -231,7 +231,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                 href: /comments/
               - title: '<i class="fas fa-tags fa-fw"></i> 标签'
                 href: /tags/
-              - title: '<i class="fas fa-archive fa-fw"></i> 归档'
+              - title: '<i class="fas fa-archive fa-fw"></i> 文章列表'
                 href: /archive/
               - title: '<i class="fas fa-coffee fa-fw"></i> 打赏'
                 href: /merger/
@@ -281,7 +281,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                   }
                 </style>
             append_to_sidebar:
-              #- <script defer="defer" src="https://cdn.jsdelivr.net/gh/poole/lanyon@v1.1.0/public/js/script.min.js"></script> # 点击空白处而非按钮从而关闭侧边栏的插件，可选
+              - <script defer="defer" src="https://cdn.jsdelivr.net/gh/poole/lanyon@v1.1.0/public/js/script.min.js"></script> # 点击空白处而非按钮从而关闭侧边栏的插件，可选
               - | #修复点击侧边栏按钮回到顶部的问题
                 <style>
                   .sidebar-checkbox {
@@ -552,21 +552,23 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
             <div class="v">
               <i class="fas fa-spinner fa-pulse"></i>
             </div>
-            <script
-              src='https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js'
-              async="async"
-              onload='
-                for(let x of document.getElementsByClassName("v"))
-                  new Valine({
-                    "el": x,
-                    "appId": "9hABRddSuEkTgqLrt1VSK5B1-gzGzoHsz",
-                    "appKey": "NJ7RwmgrxsF7KDzlqU7YewlL",
-                    "placeholder": "在这里评论吧！填写邮箱可以获得 Gravatar 头像和回复通知哦",
-                    "requiredFields": ["nick","mail"],
-                    "visitor": true,
-                    "recordIP": true
-                  })'
-            ></script>
+            {% include gittalk.html %}
+
+            # <script
+              # src='https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js'
+              # async="async"
+              # onload='
+                # for(let x of document.getElementsByClassName("v"))
+                 # new Valine({
+                   # "el": x,
+                   # "appId": "9hABRddSuEkTgqLrt1VSK5B1-gzGzoHsz",
+                   # "appKey": "NJ7RwmgrxsF7KDzlqU7YewlL",
+                   # "placeholder": "在这里评论吧！填写邮箱可以获得 Gravatar 头像和回复通知哦",
+                   # "requiredFields": ["nick","mail"],
+                   # "visitor": true,
+                  #  "recordIP": true
+                 # })'
+           # ></script>
         post:
           date: # 显示博文时间
             enable: true

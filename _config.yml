@@ -552,23 +552,22 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
             <div class="v">
               <i class="fas fa-spinner fa-pulse"></i>
             </div>
-            {% include gittalk.html %}
-
-            # <script
-              # src='https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js'
-              # async="async"
-              # onload='
-                # for(let x of document.getElementsByClassName("v"))
-                 # new Valine({
-                   # "el": x,
-                   # "appId": "9hABRddSuEkTgqLrt1VSK5B1-gzGzoHsz",
-                   # "appKey": "NJ7RwmgrxsF7KDzlqU7YewlL",
-                   # "placeholder": "在这里评论吧！填写邮箱可以获得 Gravatar 头像和回复通知哦",
-                   # "requiredFields": ["nick","mail"],
-                   # "visitor": true,
-                  #  "recordIP": true
-                 # })'
-           # ></script>
+            <script
+              src='https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js'
+              async="async"
+              onload='
+                for(let x of document.getElementsByClassName("v"))
+                  new Valine({
+                    "el": x,
+                    "appId": "x9IXEgpGg7raQsmKl28eO5rC-MdYXbMMI",
+                    "appKey": "CAJnd245xaA4xdoESxf3MAJu",
+                    "placeholder": "在这里留下您宝贵的评论吧！",
+                    "requiredFields": ["nick","mail"],
+                    "visitor": true,
+                    "recordIP": true,
+                    "avatar": mm,
+                  })'
+            ></script>
         post:
           date: # 显示博文时间
             enable: true
@@ -596,12 +595,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
             <a href="/merger/">如果这篇博客帮助到你，可以请我喝一杯咖啡~</a>
             <br/>
             <i class="fab fa-creative-commons-by fa-fw"></i>
-            <a
-              href="https://creativecommons.org/licenses/by/4.0/deed.zh"
-              rel="license">
-              CC BY 4.0
-            </a>
-            （除特别声明或转载文章外）
+
         tags:
           pie_chart: # 显示一个标签的饼状统计图，需要引入 mermaid
             enable: false

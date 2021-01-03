@@ -1,5 +1,5 @@
 ---
-title: Mac下homebrew更改国内源
+title: Mac下使用国内源安装Homebrew
 date: 2020-12-29 23:00:25
 categories: 技术
 tags: 
@@ -18,8 +18,10 @@ tags:
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
+# 因由
+        最近在Mac上学习编程,需要使用Homebrew配置安装一些软件,国内使用官方命令安装Homebrew几十K每秒的速度实在是婶婶能忍,叔叔也不能忍了!网上找了好多方法,安装了好久结果都无法解决问题,偶然间在gitee上发现了这个脚本故分享给需要的朋友!
 
-# 一句命令搞定，国内的镜像地址
+## 非常简单就下面一条命令:
 ```bash
 /bin/zsh -c "$(curl -fsSL https://gitee.com/xusoso/HomebrewCN/raw/master/Homebrew.sh)"
 ```

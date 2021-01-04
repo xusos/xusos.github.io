@@ -151,8 +151,8 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                   transition-timing-function: ease-in-out;
                   min-height: 100%;
                   display: inline-block;
-                  background-size: 100% auto;
-                  background-position: center center;
+                  background-size: auto auto;
+                  background-position: 0% 0%;
                   background-repeat: no-repeat;
                   background-attachment: fixed;
                   background-image: url(https://gitee.com/xusoso/image/raw/master/image/xixiegui.webp);

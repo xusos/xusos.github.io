@@ -223,7 +223,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
             disable: false # 是否不显示sidebar
             avatar: # 侧边栏显示的头像
               enable: true
-              img: https://raw.githubusercontent.com/xusos/xusos.github.io/master/image/touxiang.jpg # 头像的地址
+              img: https://gitee.com/xusoso/image/raw/master/image/touxiang.jpg # 头像的地址
             nav: # 导航部分的内容，你也可以自己增加文字、图标（来自fontawesome）和对应的链接
               - title: '<i class="fas fa-home fa-fw"></i> 首页'
                 href: /
@@ -415,15 +415,15 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
               - | # 我的备案信息，请你的网站删掉这一项。互联网非法外之地！
                 <div>
                   <i class="fas fa-info-circle fa-fw"></i>
-                  <a href="http://beian.miit.gov.cn">
-                    粤ICP备 20024947号
+                  <a href="http://xxxcn">
+                    xxx
                   </a>
                 </div>
               - | # 公安网备信息
                 <div>
-                  <img src="http://www.beian.gov.cn/img/new/gongan.png" class="fa-fw"></img>
-                  <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=34070202000407">
-                    皖公网安备 34070202000407号
+                  <img src="http://wxxximg/new/gongan.png" class="fa-fw"></img>
+                  <a href="http://www.xxxportal/registerSystemInfo?recordcode=34070202000407">
+                    xxx xxx
                   </a>
                 </div>
             wordcount: # 全站字数统计
@@ -654,7 +654,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
             - key: data-separator-vertical # 垂直展示页分隔符
               value: <!-- .slide vertical=true -->
             - key: data-background-color
-              value: "White"
+              value: "colorful"
           prepend: |
             <link
               rel="stylesheet"

@@ -55,12 +55,12 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
             - | # 网站小图标，可换成你自己的图片，改href中的部分即可
               <link
                 rel="apple-touch-icon-precomposed"
-                href="https://gitee.com/xusoso/image/image/touxiang.jpg"
+                href="https://gitee.com/xusoso/image/raw/master/image/touxiang.jpg"
               />
               <link
                 rel="shortcut
                 icon"
-                href="https://gitee.com/xusoso/image/image/touxiang.jpg"
+                href="https://gitee.com/xusoso/image/raw/master/image/touxiang.jpg"
               />
             - | # 来自lanyon的页面样式，不要改
               <link
@@ -155,11 +155,11 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                   background-position: 0% 0%;
                   background-repeat: no-repeat;
                   background-attachment: fixed;
-                  background-image: url(https://gitee.com/xusoso/image/image/xixiegui.webp);
+                  background-image: url(https://gitee.com/xusoso/image/raw/master/image/xixiegui.webp);
                 }
                 @media (min-aspect-ratio: 2400/1850) {
                   .wrap {
-                    background-image: url(https://gitee.com/xusoso/image/image/7.webp);
+                    background-image: url(https://gitee.com/xusoso/image/raw/master/image/7.webp);
                   }
                 }
                 .sidebar-overlay #sidebar-checkbox:checked ~ .wrap {

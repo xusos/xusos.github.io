@@ -155,11 +155,11 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                   background-position: 0% 0%;
                   background-repeat: no-repeat;
                   background-attachment: fixed;
-                  background-image: url(https://raw.githubusercontent.com/xusos/xusos.github.io/master/image/wallpaper/6.webp);
+                  background-image: url(https://gitee.com/xusoso/image/image/xixiegui.webp);
                 }
                 @media (min-aspect-ratio: 2400/1850) {
                   .wrap {
-                    background-image: url(https://raw.githubusercontent.com/xusos/xusos.github.io/master/image/wallpaper/7.webp);
+                    background-image: url(https://gitee.com/xusoso/image/image/7.webp);
                   }
                 }
                 .sidebar-overlay #sidebar-checkbox:checked ~ .wrap {

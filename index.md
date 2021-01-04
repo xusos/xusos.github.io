@@ -31,7 +31,7 @@
 
 <!-- .slide vertical=true -->
 
-- [My-YouTuBe-Channel](https://www.youtube.com/channel/UCRtopCqFwRJFKUThFpBCZWg)[![FaceBook](https://img.shields.io/website?label=Facebook&logo=Facebook&style=plastic&url=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D100024674475322)](https://www.facebook.com/profile.php?id=100024674475322)[![OtherWeb](https://img.shields.io/website?label=OtherWeb&logo=OtherWeb&style=plastic&up_message=up&url=https%3A%2F%2Fwww.iecnn.com)](https://www.iecnn.com)
+- [My-YouTuBe-Channel](https://www.youtube.com/channel/UCRtopCqFwRJFKUThFpBCZWg)[![FaceBook](https://img.shields.io/website?label=Facebook&logo=Facebook&style=plastic&url=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D100024674475322)](https://www.facebook.com/profile.php?id=100024674475322)
 
 <!-- .slide -->
 

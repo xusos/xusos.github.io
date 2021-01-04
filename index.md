@@ -1,25 +1,25 @@
-# 未厅堂
+<font color=#8A2BE2 size=30 face="楷体">未厅堂</font>
 
-欢迎访问我的个人主页！下面向你介绍一下我自己吧\~
+<font color=#0099ff size=5 face="STCAIYUN">欢迎访问我的个人主页！下面向你介绍一下我自己吧\~</font>
 
 <!-- .slide -->
 
-## Contact
-
-- Address: **Tsinghua University,Hai Dian, - Beijing, China**
-- Phone: **+1 5127666619**
-- Site: **<https://www.loeso.com>**
-
+<font color=#8A2BE2 size=30 face="楷体">Contact</font>
+<ul>
+<li><td><font color=#0099ff size=5>Address: Tsinghua University,Hai Dian, - Beijing, China</font></li>
+<li><td><font color=#0099ff size=5>Phone: +1 5127666619</font></li>
+<li><td><font color=#0099ff size=5>Site: https://www.loeso.com</font></li>
+</ul>
 <!-- .slide vertical=true -->
 
-- E-mail:
-  - **[admin@loeso.com](mailto:admin@loeso.com)**
-- WeChat: **暂不公开**
-- QQ: **暂不公开**
+<font color=#8A2BE2 size=30 face="楷体">E-mail:</font>
+ <li><td><font color=#0099ff size=5>[admin@loeso.com](mailto:admin@loeso.com)</font></li>
+<li><td><font color=#0099ff size=5>WeChat: **暂不公开</font></li>
+<li><td><font color=#0099ff size=5>QQ: **暂不公开</font></li>
 
 <!-- .slide -->
 
-## Education
+<font color=#8A2BE2 size=30 face="楷体">Education</font>
 
 <!-- .slide vertical=true -->
 
@@ -27,7 +27,7 @@
  - Self-study Department, Home School, Tsinghua University, China
 <!-- .slide -->
 
-## Projects
+<font color=#8A2BE2 size=30 face="楷体">Projects</font>
 
 <!-- .slide vertical=true -->
 
@@ -35,7 +35,7 @@
 
 <!-- .slide -->
 
-## Blogs
+<font color=#8A2BE2 size=30 face="楷体">Blogs</font>
 
 - [超详细hexo博客部署到github教程](https://www.loeso.com/_posts/%E6%8A%80%E6%9C%AF/2020-04-21-%E8%B6%85%E8%AF%A6%E7%BB%86hexo%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0github%E6%95%99%E7%A8%8B/)
 - [OpenWrt(LEDE)编译](https://www.loeso.com/_posts/%E6%8A%80%E6%9C%AF/2020-04-15-OpenWrt-LEDE-%E7%BC%96%E8%AF%91/)
@@ -43,7 +43,7 @@
 - [Mac下安装jekyll遇到的那些坑](https://www.loeso.com/_posts/%E6%8A%80%E6%9C%AF/2020-12-30-Mac%E4%B8%8B%E5%AE%89%E8%A3%85jekyll%E7%9A%84%E9%82%A3%E4%BA%9B%E5%9D%91/)
 <!-- .slide -->
 
-## Skills
+<font color=#8A2BE2 size=30 face="楷体">Skills</font>
 
 <!-- .slide vertical=true -->
 

@@ -11,7 +11,7 @@ description: | # 头像背后的信息（html格式），<br/>代表换行
     <i class="fab fa-github"></i>
   </a>
   <a href="https://www.youtube.com/channel/UCRtopCqFwRJFKUThFpBCZWg">
-    <i class="fa fa-youtube-play" aria-hidden="true"></i>
+    <i class="fa fa-youtube-play"></i>
   </a>
   <iframe
     src="https://music.163.com/outchain/player?type=2&id=169185&auto=1&height=66"

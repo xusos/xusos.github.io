@@ -1,9 +1,9 @@
 title: 未厅堂‘blog # 站点标题
 description: | # 头像背后的信息（html格式），<br/>代表换行
-  SYSU超算17级在读<br/>
-  水野爱<br/>
-  HPC<br/>
-  田宫例四驱车<br/>
+  三花聚顶本是幻<br/>
+  脚下腾云亦非真<br/>
+  大梦一场终须醒<br/>
+  无根无极本归尘<br/>
   <a href="mailto:admin@loeso.com">
     <i class="fas fa-envelope"></i>
   </a>
@@ -11,7 +11,7 @@ description: | # 头像背后的信息（html格式），<br/>代表换行
     <i class="fab fa-github"></i>
   </a>
   <a href="https://www.youtube.com/channel/UCRtopCqFwRJFKUThFpBCZWg">
-    <i class="fas fa-youtube-play"></i>
+    <i class="fa fa-youtube-play"></i>
   </a>
   <iframe
     src="https://music.163.com/outchain/player?type=2&id=169185&auto=1&height=66"

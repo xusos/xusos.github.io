@@ -654,7 +654,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
             - key: data-separator-vertical # 垂直展示页分隔符
               value: <!-- .slide vertical=true -->
             - key: data-background-color
-              value: "553648127"
+              value: "Ivory" # 553648127透明
           prepend: |
             <link
               rel="stylesheet"

@@ -266,7 +266,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                       json: "/assets/simple-jekyll-search/search.json",
                       searchInput: document.getElementById("sidebar-search-input"),
                       resultsContainer: document.getElementById("sidebar-search-results-container"),
-                      searchResultTemplate: `<li><a href="{url}">{title}</a></li>`,`<li><a href="{url}/archive/">文章列表</a></li>`,
+                      searchResultTemplate: `<li><a href="{url}">{title}</a></li>`,
                       limit: 999,
                       fuzzy: true
                     })'
@@ -619,7 +619,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                 var profile = "admin@loeso.com";
                 var usage = "payment";
                 var wechat = "wxp://f2f0ML14eLwBfkmT9ouDh5gBATumsAU68Tnj";
-                var tenpay = "https://i.qianbao.qq.com/";
+                var tenpay = "https://i.qianbao.qq.com/wallet/sqrcode.htm?m=tenpay&f=";
                 var alipay = "https://qr.alipay.com/fkx09193s9esfmbmlxeki42?t=1609258849370";
                 var paypal = "https://paypal.me/cntingtang";
                 var multilingual = false;
@@ -628,7 +628,6 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                 var subtitle = "跟随进一步的指示以向" + myname + "付款";
                 var qrcodeapi = "https://www.zhihu.com/qrcode?url=";
                 var gravatar_url = "https://gravatar.loli.net/avatar/";
-              </script>
             - |
               <meta
                 charset="utf-8"

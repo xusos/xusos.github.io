@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Macos上如何把图片转换成webp格式
 date: 2021-01-04 14:22:48
 categories: 技术
@@ -6,6 +7,7 @@ tags:
 - Mac
 - macos
 - webp
+author: 未厅堂
 ---
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>

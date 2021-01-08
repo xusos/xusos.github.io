@@ -1,10 +1,12 @@
 ---
+layout: post
 title: 超详细hexo博客部署到github教程
 categories: 技术
 tags:
 - hexo
 - 博客
 - 网站
+author: 未厅堂
 ---
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>

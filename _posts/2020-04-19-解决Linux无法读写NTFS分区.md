@@ -1,10 +1,12 @@
 ---
+layout: post
 title: 解决Linux无法读写NTFS分区
 categories: 技术
 tags:
 - ntfs
 - linux
 - centos
+author: 未厅堂
 ---
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <ins class="adsbygoogle"

@@ -1,10 +1,12 @@
 ---
+layout: post
 title: 解决Mac安装Homebrew太慢
 date: 2020-12-29 23:00:25
 categories: 技术
 tags:
 - Mac
 - Homebrew
+author: 未厅堂
 ---
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>

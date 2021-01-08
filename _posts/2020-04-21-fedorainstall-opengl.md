@@ -1,8 +1,10 @@
 ---
+layout: post
 title: fedora安装OpenGL
 date: 2020-04-20 14:22:48
 categories:
 tags:
+author: 未厅堂
 ---
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <ins class="adsbygoogle"

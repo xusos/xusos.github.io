@@ -1,4 +1,5 @@
 ---
+layout: post
 title: OpenWrt(LEDE)编译
 date: 2020-04-15 15:03:59
 categories: 技术
@@ -6,6 +7,7 @@ tags:
 - openwrt
 - lede
 - 软路由
+author: 未厅堂
 ---
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>

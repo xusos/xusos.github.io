@@ -266,7 +266,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                       json: "/assets/simple-jekyll-search/search.json",
                       searchInput: document.getElementById("sidebar-search-input"),
                       resultsContainer: document.getElementById("sidebar-search-results-container"),
-                      searchResultTemplate: `<li><a href="{url}">{title}</a></li>`,
+                      searchResultTemplate: `<li><a href="{url}">{title}</a></li>`,<li><a href="{url}/archive/">文章列表</a></li>,
                       limit: 999,
                       fuzzy: true
                     })'

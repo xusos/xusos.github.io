@@ -1,0 +1,145 @@
+---
+title: GIMP中8个最好用的插件
+date: 2020-04-16 22:41:24
+categories: 技术
+tags:
+- gimp
+- 插件
+---
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-1334509736068927"
+     data-ad-slot="4348838154"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+插件有助于将GIMP变成一个好的程序。为程序添加新功能，改进您的工作流程，这能使GIMP成为Photoshop的最佳免费替代软件之一。
+
+但是它很复杂，需要有一定的基础。整个GIMP插件体验不是很好。安装起来很棘手，并且存在许多兼容性问题。
+
+这就是写本文的初衷。在本文中，我们将引导您完成GIMP插件安装。让我们开始吧......
+<!--more-->
+
+在哪里可以找到GIMP插件
+
+GIMP插件场景有点混乱。插件曾经在GIMP注册表中收集，但不再存在。这意味着他们现在分散在互联网上。
+
+有些人也很老。在许多情况下，它们在十年或更长时间内没有更新。无法保证插件能够与最新版本的GIMP很好地配合使用。事实上，像GIMP DDS插件或BIMP这样的流行产品现在已经被废弃，不再有效。
+
+# 如何安装GIMP插件
+
+不可避免的是，安装过程也很复杂。安装GIMP插件有两种主要方法。
+![](https://thumbnail0.baidupcs.com/thumbnail/0232cafaaj95ae63ca6f31e59546fac1?fid=2420416292-250528-127182731895138&rt=pr&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-qvtLUWV714yp97XPaBetexNV02I%3d&expires=8h&chkbd=0&chkv=0&dp-logid=2480628066000916264&dp-callid=0&time=1587045600&size=c670_u328&quality=90&vuk=2420416292&ft=image)
+
+
+## 首先是手动方式
+如果您的插件是ZIP文件，那么您需要将内容复制到GIMP的插件和脚本文件夹。
+
+解压缩下载。
+- 在GIMP中，转到“首选项”>“文件夹”。找到Plug-ins和s部分。
+- 每个部分有两个文件夹。一个是系统文件夹，另一个是用户文件夹。选择后者，然后单击文件管理器中的显示文件位置以将其打开。
+- 如果您的下载是PY格式， 请将它们移动到Plug-ins文件夹中。
+- 如果它们处于SCM格式， 则将它们移动到s文件夹中。
+- 现在重启GIMP。
+
+## 第二种方式是自动方法
+一些插件与自己的安装程序一起打包。只需双击它并像安装任何其他应用程序一样安装它。
+
+安装程序是特定于平台的，因此您可能会发现仅适用于Windows但不适用于Linux或Mac的插件。此外，请记住，从互联网上打开随机安装程序是一项有风险的业务，因此请确保您的防病毒软件是最新的并且正常运行。
+![](https://thumbnail0.baidupcs.com/thumbnail/3c16e7feaq774334237b34c8db1f4074?fid=2420416292-250528-114140175218379&rt=pr&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-ss0FzZ11GlUn1UQHwFi6M6KMsqQ%3d&expires=8h&chkbd=0&chkv=0&dp-logid=2480628066000916264&dp-callid=0&time=1587045600&size=c670_u377&quality=90&vuk=2420416292&ft=image)
+
+
+还有第三种选择，即安装整个GIMP应用程序的自定义版本。partha.com上的一个流行版本预装了几个插件，包括Resynthesizer和G'MIC。
+
+这些是最好的GIMP插件之一，我们接下来会看到。
+
+# 1. DarkTable
+
+![](https://thumbnail0.baidupcs.com/thumbnail/0820bfe17s188ac7b2fb8fce085c49f7?fid=2420416292-250528-345403472782051&rt=pr&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-Wtr2xFwhr82NcUEMFVBwe996kMU%3d&expires=8h&chkbd=0&chkv=0&dp-logid=2480628066000916264&dp-callid=0&time=1587045600&size=c670_u366&quality=90&vuk=2420416292&ft=image)
+
+GIMP 2.10（如何开始使用GIMP）是您可以获得的最好的免费照片编辑应用程序之一。您甚至可以将它与RAW照片一起使用，但您需要先添加自己的RAW编辑器。有两个主要选项，DarkTable和RawTherapee。
+
+两者都值得测试，但我们更喜欢DarkTable，因为它具有更易于访问的界面，更浅的学习曲线以及一些高级功能，包括屏蔽工具。
+
+安装完成后，您可以将RAW图像拖动到GIMP中，它将启动DarkTable，您可以在其中开始编辑。效果与着名的Photoshop和Adobe Camera RAW组合相同，效果也一样好。
+
+# 2. G'MIC
+![](https://thumbnail0.baidupcs.com/thumbnail/b3af78971i54100fedd8930d9fa59758?fid=2420416292-250528-654804753978882&rt=pr&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-veuJqnxWRcbI2JQvn67R10Gr7qc%3d&expires=8h&chkbd=0&chkv=0&dp-logid=2480628066000916264&dp-callid=0&time=1587045600&size=c670_u366&quality=90&vuk=2420416292&ft=image)
+
+
+作为照片编辑器的另一个插件，G'MIC提供超过500种滤镜和效果，您可以使用它们为您的镜头增添乐趣。
+
+范围惊人。有一些基础知识，如胶片库存模拟和帧，更高级的东西，如降噪和其他修复工具，甚至一些3D效果。只需单击一下，即可使用每个默认设置。但如果您愿意，可以为每个过滤器使用一系列滑块来自定义外观，并获得您想要的确切结果。
+
+# 3.Resynthesizer
+![](https://thumbnail0.baidupcs.com/thumbnail/24ad1ab33r871043bb9f43f8556ae3b2?fid=2420416292-250528-997832175210480&rt=pr&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-IqZB5iJb09o2uXw0W391XQ9JXIg%3d&expires=8h&chkbd=0&chkv=0&dp-logid=2480628066000916264&dp-callid=0&time=1587045600&size=c670_u366&quality=90&vuk=2420416292&ft=image)
+
+
+Resynthesizer是GIMP最古老的插件之一，也是最重要的插件之一。它提供了一系列基于纹理的工具。您将在“增强”菜单下找到关键部分：治疗选择。
+
+这是GIMP相当于Photoshop的内容感知填充工具，这是Photoshop可以做到的GIMP无法做到的事情之一。它使您可以完全无缝地从照片中删除不需要的对象。
+
+Photoshop可以做什么，GIMP不能做什么？ Photoshop可以做什么，GIMP不能做什么？GIMP可以做很多Photoshop可以做的事情，但是有一些领域不足。以下是主要差异的摘要。阅读更多
+
+Heal Selection神奇地取代了图像背景中周围内容的入侵，并且它完美融合。所以，如果你从天空中移除一些东西，空间将充满更多的天空。您通常必须使用克隆工具。这是一个更加费力的过程。
+
+# 4. Hugin
+![](https://thumbnail0.baidupcs.com/thumbnail/cfffaf40fiecb5a2ac03a946837dd937?fid=2420416292-250528-485264693198747&rt=pr&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-EVF8JMPMnzackOI%2bwNsq9hnM%2fYE%3d&expires=8h&chkbd=0&chkv=0&dp-logid=2480628066000916264&dp-callid=0&time=1587045600&size=c670_u366&quality=90&vuk=2420416292&ft=image)
+
+
+当您需要将一系列图像拼接在一起以创建全景图时，Hugin是用于GIMP的最佳工具。入门很简单。只需加载您的图像，在每个图像上指定几个公共点，然后应用程序将它们合并在一起。它还可以纠正不匹配的角度和曝光。
+
+Hugin作为独立应用程序运行，可用于Windows，Mac和Linux。
+
+# 5. Wavelet Decompose
+![](https://thumbnail0.baidupcs.com/thumbnail/548d790e8q1ecb94b62520a23d7ced41?fid=2420416292-250528-890041415066994&rt=pr&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-xnsIpcjKY9LhPS3qr7tB55SySLk%3d&expires=8h&chkbd=0&chkv=0&dp-logid=2480628066000916264&dp-callid=0&time=1587045600&size=c670_u366&quality=90&vuk=2420416292&ft=image)
+
+
+皮肤修饰是人像摄影不可或缺的一部分。Wavelet Decompose是GIMP上最好的插件。
+
+该插件使用高级形式的频率分离。它将图像分成多个层，每个层包含不同的细节集。这使您可以非常精确地控制要平滑的细节以及要保留的细节。
+
+声音复杂吗？嗯，这个概念是，但实践不是。只需加载插件，使用模糊和光滑的工具，让你的皮肤光泽。
+
+# 6. Duplicate to Another Image
+![](https://thumbnail0.baidupcs.com/thumbnail/68aefc3cbt5a712808525db6490f324d?fid=2420416292-250528-1044092392721720&rt=pr&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-S1Bzas4Z1k%2bcUqG%2fO2%2bGl95HAHE%3d&expires=8h&chkbd=0&chkv=0&dp-logid=2480628066000916264&dp-callid=0&time=1587045600&size=c670_u366&quality=90&vuk=2420416292&ft=image)
+
+
+这个简单的脚本可以节省时间。它的名称准确描述了它的作用：它将选择复制到另一个图像文件。
+
+GIMP不能这样做吗？是的，但不是很好。Duplicate to Another Image插件具有更多功能。您可以将选区复制到与原始图像大小相同的新图像上，并将对象放在同一位置，以便更改图像的背景。
+
+或者，当您要隔离单个对象时，可以复制到新图像并将其裁剪为大小。您可以将对象复制到另一个已打开的图像。
+
+# 7. s Bundle
+![](https://xact01.baidupcs.com/file/72a1fb544jbff6ff414f0af2ec17334c?bkt=en-864c1d195a8f2f4122945a9c3590bcc3837ff1e59e28d5321afab04953e82c725b1dfc6defbdc28ee9b46803cbabb25588a4f11a59817aa799dd815c59450271&fid=2420416292-250528-968356117103878&time=1587050020&sign=FDTAXUGERLQlBHSKfW-DCb740ccc5511e5e8fedcff06b081203-D2%2Fdj%2BfQv%2BhKYM5b1JwNXFeTlMw%3D&to=125&size=278749&sta_dx=278749&sta_cs=0&sta_ft=png&sta_ct=0&sta_mt=0&fm2=MH%2Cdefault_region%2CAnywhere%2C%2Cxinjiang%2Cct&ctime=1587049055&mtime=1587049055&resv0=-1&resv1=0&resv2=rlim&resv3=5&resv4=278749&vuk=2420416292&iv=0&htype=&randtype=&newver=1&newfm=1&secfm=1&flow_ver=3&pkey=en-67b5a6b8df19f1f5af95beabba75bd9b4e5ecea4924745d2c0036524e7edb2cb275170b9ddbbb1482e2f3de46f30fbfafed909f5886f027d305a5e1275657320&sl=68616270&expires=8h&rt=pr&r=718377946&vbdid=881122592&fin=s+Bundle.png&fn=s+Bundle.png&rtype=1&dp-logid=2480885452408815321&dp-callid=0.1&hps=1&tsl=200&csl=200&fsl=-1&csign=EV8M7n5LJhsV5PXyNfm24mQkmfk%3D&so=0&ut=6&uter=4&serv=0&uc=3749811246&ti=0887d9faa0e9926418df5c22dedc3dbcfee8fa2ab0effe58305a5e1275657320&adg=c_5666d6be4a2efff956aaad9a1cbab4e3&reqlabel=250528_f_af1eb05f8082fc92baca654883ad0338_-1_a9fb60a4a87538741790fafc3585c5b5&by=themis)
+
+
+GIMP插件有很多尺寸和复杂性，但通常是最终使用最多的单功能插件。
+
+这个包含100多个脚本的集合为您提供了大量常用图像编辑和图形设计任务的快捷方式。您将获得一个GIMP草图插件，一些用于锐化照片或添加帧的脚本，以及一些用于生成效果或模拟电影库存的脚本。这里有很多东西可以玩。它们都经过测试，并与GIMP 2.10完全兼容。
+
+# 8. Nik Collection
+![](https://xact01.baidupcs.com/file/b5f4c82f3g26abc74749d1b94c2eb00c?bkt=en-660aa7a193f4106d161aa2d2d34ec781cbf3df0e63e5d26507092cd96196ca8f370f71f54fbe3ce093eac9066c218e49f0710a777115e8bed745730360a11329&fid=2420416292-250528-506872171681648&time=1587050061&sign=FDTAXUGERLQlBHSKfW-DCb740ccc5511e5e8fedcff06b081203-p6jWlfmzB4vkQ%2FuU0qtYy1o8vkA%3D&to=125&size=353093&sta_dx=353093&sta_cs=0&sta_ft=png&sta_ct=0&sta_mt=0&fm2=MH%2Cdefault_region%2CAnywhere%2C%2Cxinjiang%2Cct&ctime=1587049050&mtime=1587049050&resv0=-1&resv1=0&resv2=rlim&resv3=5&resv4=353093&vuk=2420416292&iv=0&htype=&randtype=&newver=1&newfm=1&secfm=1&flow_ver=3&pkey=en-c430be6418b875192f94015c65e4a16f7e54eee9cf14e061675615612c4da0dd149b46dbf2a8af687515ff58e80c00995b7ee504a0917b60305a5e1275657320&sl=68616270&expires=8h&rt=pr&r=967068424&vbdid=881122592&fin=Nik+Collection.png&fn=Nik+Collection.png&rtype=1&dp-logid=2480896598004471866&dp-callid=0.1&hps=1&tsl=200&csl=200&fsl=-1&csign=EV8M7n5LJhsV5PXyNfm24mQkmfk%3D&so=0&ut=6&uter=4&serv=0&uc=3749811246&ti=8f692c02a37bcacc51b13a076c21d78f55bb7be1e614d9d3&adg=c_5666d6be4a2efff956aaad9a1cbab4e3&reqlabel=250528_f_af1eb05f8082fc92baca654883ad0338_-1_a9fb60a4a87538741790fafc3585c5b5&by=themis)
+
+
+最后，Nik Collection，专业级的照片编辑程序套件。它使您可以访问专业级锐化和降噪，滤色镜，HDR效果等等。它真正将GIMP提升到一个新的水平。
+
+所以，如果它很好，为什么我们将它保持到最后？有两个原因。
+
+首先，Nik Collection的免费版本已不再正式推出。您仍然可以从Internet Archive下载它，如果您已经在PC上安装了它，则可以进行设置。其次，你必须通过一些箍来使它工作。幸运的是，我们有一个指南，使用谷歌的免费Nik插件与GIMP，告诉你该怎么做。请放心，这是值得的。
+
+如何开始使用Google的免费Nik插件进行摄影 如何开始使用Google的免费Nik插件进行摄影Google使其Nik Collection插件完全免费。这些插件可与照片编辑软件配合使用，例如Adobe Photoshop和Lightroom。这是如何开始。阅读更多
+
+# 如何使用GIMP插件
+
+一旦安装了GIMP插件，它就会显示在多个位置之一。它可能出现在“过滤器”菜单下，或者其中一个子菜单下。它可能位于图像或图层下，或者您可能会得到一个名为-Fu的全新菜单。有时，插件（如RAW编辑器）作为单独的应用程序运行，触发即可在需要时启动。
+
+当您找到自己喜欢的插件时，请确保保留下载文件的副本。你永远不知道它何时会消失。不幸的是，这是使用GIMP插件的现实。
+
+插件并不是启动GIMP的唯一方法。例如，如果您正在寻找GIMP水彩插件，那么最好使用画笔。为此，您需要我们最好的GIMP画笔指南。

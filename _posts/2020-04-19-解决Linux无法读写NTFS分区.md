@@ -26,7 +26,9 @@ https://www.tuxera.com/community/open-source-ntfs-3g/
     make
     make install #OR 'sudo make install'
 ```
-<!--more-->
+
+
+
 
 # 新建文件
 ```bash

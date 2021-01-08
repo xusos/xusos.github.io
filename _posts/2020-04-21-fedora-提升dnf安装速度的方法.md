@@ -17,7 +17,7 @@ tags:
 </script>
 
 Fedora是一个功能强大的Linux发行版，但它有一个严重的缺点：DNF包管理器，与Ubuntu和Debian的Apt，Arch的Pacman，甚至是OpenSUSE的Zypper相比比较慢。本文介绍提高Fedora Linux应用程序安装速度的方法：升级Fedora、安装最新更新、设置DNF以使用尽可能快的镜像、更改DNF以一次下载多个包。
-
+<!--more-->
 # 第1步、升级Fedora
 Fedora Linux在每个新版本中都会变得更好，每几个月，开发人员就会尽最大努力改进底层技术。因此，如果你在Fedora的DNF应用安装程序中安装软件包时遇到性能问题，那么你应该做的第一件事就是将你的版本升级到最新版本，要升级Fedora，请打开Gnome Software，单击新版本标题，然后完成将Fedora Linux PC转换为最新版本的过程。
 

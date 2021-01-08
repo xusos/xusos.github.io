@@ -48,6 +48,7 @@ brew install webp
 ```bash
 sudo port install webp
 ```
+<!--more-->
 然后，使用cwebp将图像转换为WebP格式，例如将xxx.png以80的质量转换为webp格式：
 ```bash
 cwebp -q 80 xxx.png -o xxx.webp

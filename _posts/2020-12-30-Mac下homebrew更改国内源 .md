@@ -19,7 +19,8 @@ author: 未厅堂
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-
+* content
+{:toc}
 # 因由
         最近在Mac上学习编程,需要使用Homebrew配置安装一些软件,国内使用官方命令安装Homebrew几十K每秒的速度实在是婶婶能忍,叔叔也不能忍了!网上找了好多方法,安装了好久结果都无法解决问题,偶然间在gitee上发现了这个脚本故分享给需要的朋友!
 

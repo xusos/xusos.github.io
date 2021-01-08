@@ -17,7 +17,8 @@ author: 未厅堂
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
-
+* content
+{:toc}
 Fedora和Ubuntu下安装OpenGL开发环境配置
 	我整理的OpenGL开发库的详细介绍
 	fedora23 安装OpenGL
@@ -25,7 +26,10 @@ Fedora和Ubuntu下安装OpenGL开发环境配置
 开发OpenGL工程需要3个库文件和对应的头文件：
 libglut.so,libGLU.so,libGL.so， gl.h ，glu.h， glut.h
 使用locate命令可以进行定位
-<!--more-->
+
+
+
+
 安装开发包(需要3个开发包)：
 ```bash
     sudo dnf install mesa-libGL-devel mesa-libGLU-devel //这两个是opengl核心库

@@ -19,12 +19,16 @@ author: 未厅堂
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-
+* content
+{:toc}
 **Homebrew**是一款Mac OS平台下的软件包管理工具，拥有安装、卸载、更新、查看、搜索等很多实用的功能。简单的一条指令，就可以实现包管理，而不用你关心各种依赖和文件路径的情况，十分方便快捷。
 
 > 本文主要解决问题：Homebrew常规安装太慢；以及通过brew install安装软件太慢，还有时不时的自动updating巨耗时的问题。
-<!--more-->
+
 首先安利官网：https://brew.sh/index_zh-cn
+
+
+
 
 官网安装命令：
 ```bash

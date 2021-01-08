@@ -20,10 +20,10 @@ author: 未厅堂
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
+
 * content
 {:toc}
 编译环境需要Linux系统，本教程使用Ubuntu，其他Linux系统也是可以的(必须可以翻墙) 
-
 注意:
 1.  不要用 root 用户 git 和编译！！!
 2.  国内用户编译前最好准备好梯子 
@@ -31,7 +31,7 @@ author: 未厅堂
  
 
 
- 
+
 ####  编译命令如下: 
 
 1. 首先装好 Ubuntu 64bit，推荐  Ubuntu  14 LTS x64 

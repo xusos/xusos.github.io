@@ -1,3 +1,24 @@
+---
+title: Macos上如何把图片转换成webp格式
+date: 2021-01-04 14:22:48
+categories: 技术
+tags:
+- Mac
+- macos
+- webp
+---
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-1334509736068927"
+     data-ad-slot="4348838154"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 # Web的新图像格式
 摘自:
 > https://developers.google.com/speed/webp
@@ -35,7 +56,13 @@ cwebp -q 80 xxx.png -o xxx.webp
 ```bash
 dwebp xxx.webp -o xxx.png
 ```
-webp格式批量转换成png：
+jpg(如果是png把命令中的jpg改成png就行)批量转换成webp:
+```bash
+find ./ -name "*.jpg" -exec cwebp {} -o {}.webp \;
+```
+webp格式批量转换成png(如果像转换成jpg把png改成jpg)：
 ```bash
 find ./ -name "*.webp" -exec dwebp {} -o {}.png \;
+
+
 ```

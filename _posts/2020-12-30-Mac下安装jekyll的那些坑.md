@@ -101,26 +101,28 @@ The reason is Apple does not allow you to change its own libraries even using su
 ```bash
 brew install ruby
 ```
-- 然后需要把新版本ruby的路径添加的路径文件里面，方便命令行操作。打开bash_profile ```bash nano ~/.bash_profile```
-- 添加路径到bash_profile里面 ```bash export PATH="/usr/local/lib/ruby/gems/3.0.0/bin:$PATH"```
-- 添加完成后需要reload一下 ```bash source ~/.bash_profile```
-- 确认是否产生变化 ```bash echo $PATH```，结果显示 ```bash /usr/local/lib/ruby/gems/3.0.0/bin```
-如果用的terminal终端是zsh不是bash那么你需要 ```bash echo 'export PATH="/usr/local/opt/ruby/bin:$PATH"' >> ~/.zshrc```
-- 接下来需要让编译器找到ruby ```bash export LDFLAGS="-L/usr/local/opt/ruby/lib"```, ```bash export CPPFLAGS="-I/usr/local/opt/ruby/include"```
-- 确认ruby路径,重启一下终端 which ruby,结果显示 ```bash /usr/local/opt/ruby/bin/ruby```
-- 确认ruby版本，```bash ruby -v```,结果显示 ```bash ruby 3.0.0p0 (2020-12-25 revision 95aff21468) [x86_64-darwin19]```
+- 然后需要把新版本ruby的路径添加的路径文件里面，方便命令行操作。打开bash_profile ``` nano ~/.bash_profile```
+- 添加路径到bash_profile里面 ```export PATH="/usr/local/lib/ruby/gems/3.0.0/bin:$PATH"```
+- 添加完成后需要reload一下 ```source ~/.bash_profile```
+- 确认是否产生变化 ```echo $PATH```，结果显示 ``` /usr/local/lib/ruby/gems/3.0.0/bin```
+如果用的terminal终端是zsh不是bash那么你需要 ``` echo 'export PATH="/usr/local/opt/ruby/bin:$PATH"' >> ~/.zshrc```
+- 接下来需要让编译器找到ruby ``` export LDFLAGS="-L/usr/local/opt/ruby/lib"```, ``` export CPPFLAGS="-I/usr/local/opt/ruby/include"```
+- 确认ruby路径,重启一下终端 which ruby,结果显示 ``` /usr/local/opt/ruby/bin/ruby```
+- 确认ruby版本，```ruby -v```,结果显示 ``` ruby 3.0.0p0 (2020-12-25 revision 95aff21468) [x86_64-darwin19]```
 Here is the solution：
 
-- install new version ruby（defaule to be latest）it will seperate system ruby version to avoid unexpected problem ```bash brew install ruby```
-- then add path. open bash_profile ```bash nano ~/.bash_profile```
-- add path to bash_profile ```bash export PATH="/usr/local/lib/ruby/gems/3.0.0/bin:$PATH"```
-- reload after adding ```bash source ~/.bash_profile```
-- confirm effection ```bash echo $PATH```，display ```bash /usr/local/lib/ruby/gems/3.0.0/bin```
-- if you use zsh not bash you need ```bash echo 'export PATH="/usr/local/opt/ruby/bin:$PATH"' >> ~/.zshrc```
-- let compliers find ruby ```bash export LDFLAGS="-L/usr/local/opt/ruby/lib"```, ```bash export CPPFLAGS="-I/usr/local/opt/ruby/include"```
-- relaunch the terminal and confirm ruby path which ruby,display ```bash /usr/local/opt/ruby/bin/ruby```
-- confirm ruby version，```bash ruby -v```, display ```bash ruby 3.0.0p0 (2020-12-25 revision 95aff21468) [x86_64-darwin19]```
+- install new version ruby（defaule to be latest）it will seperate system ruby version to avoid unexpected problem ``` brew install ruby```
+- then add path. open bash_profile ``` nano ~/.bash_profile```
+- add path to bash_profile ``` export PATH="/usr/local/lib/ruby/gems/3.0.0/bin:$PATH"```
+- reload after adding ```source ~/.bash_profile```
+- confirm effection ``` echo $PATH```，display ``` /usr/local/lib/ruby/gems/3.0.0/bin```
+- if you use zsh not bash you need ```echo 'export PATH="/usr/local/opt/ruby/bin:$PATH"' >> ~/.zshrc```
+- let compliers find ruby ``` export LDFLAGS="-L/usr/local/opt/ruby/lib"```, ``` export CPPFLAGS="-I/usr/local/opt/ruby/include"```
+- relaunch the terminal and confirm ruby path which ruby,display ``` /usr/local/opt/ruby/bin/ruby```
+- confirm ruby version，``` ruby -v```, display ``` ruby 3.0.0p0 (2020-12-25 revision 95aff21468) [x86_64-darwin19]```
 接下来可以愉快的安装jekyll啦： done!
+
+
 ```bash
 sudo gem install jekyll
 
@@ -135,4 +137,5 @@ Successfully installed jekyll-sass-converter-2.0.1
 Successfully installed kramdown-2.1.0
 Successfully installed kramdown-parser-gfm-1.1.0
 ```
+
 希望对你们有点帮助！ I hope it helps!

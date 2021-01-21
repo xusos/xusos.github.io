@@ -152,9 +152,9 @@ pageview:
 
   ## Leancloud
   leancloud:
-    app_id    : "x9IXEgpGg7raQsmKl28eO5rC-MdYXbMMI" # LeanCloud App id
-    app_key   : "CAJnd245xaA4xdoESxf3MAJu" # LeanCloud App key
-    app_class : hexo # LeanCloud App class
+    app_id    : x9IXEgpGg7raQsmKl28eO5rC-MdYXbMMI # LeanCloud App id
+    app_key   : CAJnd245xaA4xdoESxf3MAJu # LeanCloud App key
+    app_class : Text # LeanCloud App class
 
 
 ## => Search

@@ -219,7 +219,10 @@ defaults:
 ## => Plugins
 ##############################
 plugins:
-  - jekyll-feed
+  - jekyll-feed     # 为站点生成RSS源
   - jekyll-paginate
-  - jekyll-sitemap
+  - jekyll-sitemap  # 为站点生成站点地图
   - jemoji
+  
+  - jekyll-readme-index # 使用readme做index，从而和github渲染效果一致
+  - jekyll-default-layout # 为每个markdown自动生成layout

@@ -127,11 +127,11 @@ comments:
   ## Gitalk
   # please refer to https://github.com/gitalk/gitalk for more info.
   gitalk:
-    clientID    : # GitHub Application Client ID
-    clientSecret: # GitHub Application Client Secret
-    repository  : # GitHub repo
-    owner       : # GitHub repo owner
-    admin: # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
+    clientID    : bca952c205a9aefd7d6a # GitHub Application Client ID
+    clientSecret: 0b294c12ccc44dc8eaa8fa3a78e4908e2369e4d6 # GitHub Application Client Secret
+    repository  : GitHub repo # GitHub repo
+    owner       : GitHub repo owner # GitHub repo owner
+    admin       : xusos # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
       # - your GitHub Id
 
   ## Valine

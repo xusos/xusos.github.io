@@ -1,53 +1,89 @@
-# WhatATheme
-**WhatATheme** is a customizable Jekyll Portfolio theme which supports blogging. You can use this theme in order to create an elegant, fully responsive portfolio.
+# [TeXt Theme](https://github.com/kitian616/jekyll-TeXt-theme)
 
-#### You can checkout the [**Demo Here**](https://thedevslot.github.io/WhatATheme/) :boom:
+[![license](https://img.shields.io/github/license/kitian616/jekyll-TeXt-theme.svg)](https://github.com/kitian616/jekyll-TeXt-theme/blob/master/LICENSE)
+[![Gem Version](https://img.shields.io/gem/v/jekyll-text-theme.svg)](https://github.com/kitian616/jekyll-TeXt-theme/releases)
+[![Travis](https://img.shields.io/travis/kitian616/jekyll-TeXt-theme.svg)](https://travis-ci.org/kitian616/jekyll-TeXt-theme)
+[![Tip Me via PayPal](https://img.shields.io/badge/PayPal-tip%20me-1462ab.svg?logo=paypal)](https://www.paypal.me/kitian616)
+[![Tip Me via Bitcoin](https://img.shields.io/badge/Bitcoin-tip%20me-f7931a.svg?logo=bitcoin)](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/docs/assets/images/3Fkufxcw2xd8HnaRJBNK4ccdtkUDyyNu4V.jpg)
 
-![WhatATheme](assets/images/meta.jpg)
+![TeXt Theme](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/TeXt-home.jpg)
 
-# Features :sparkles:
-* Free and Easy setup
-* No Coding Required
-* Compatible with [Github Pages](https://pages.github.com/)
-* Responsive and Blogging Ready
-* HTML Compressor using [Jekyll Compress HTML](https://jch.penibelst.de/)
-* Minified CSS using SaSS
-* CMS Admin Support using [Jekyll Admin](https://jekyll.github.io/jekyll-admin/)
-* Supports Latest [Jekyll 4.x](https://jekyllrb.com/) and [Bundler](https://bundler.io/)
-* Stylesheet built using SaSS
-* Comments using Disqus
-* Analytics using Google Analytics
-* Instant Search using [Simple Jekyll Search](https://github.com/christian-fei/Simple-Jekyll-Search/)
+![TeXt Theme Details](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/TeXt-layouts.png)
 
-# Installation :books:
-### System Requirements
-* [Ruby](https://www.ruby-lang.org/en/)
-* [Jekyll](https://jekyllrb.com/)
-> You can read **What is Jekyll** [**here**](https://thedevslot.github.io/WhatATheme/blog/what-is-jekyll-how-to-use-it)
-### Up and Running
-* Fork the [Repository](https://github.com/thedevslot/WhatATheme/)
-* Clone or download the repository into directory of your choice: `git clone https://github.com/thedevslot/WhatATheme.git`
-* Inside the directory run `bundle install`
-* Host WhatATheme locally by running `bundle exec jekyll s`
+TeXt is a super customizable Jekyll theme for personal site, team site, blog, project, documentation, etc. Similar to iOS 11 style, it has large and prominent titles, round buttons and cards.
 
-> You can read **How to Install and use WhatATheme?** [**here**](https://thedevslot.github.io/WhatATheme/blog/how-to-install-whatatheme)
+**[Change Log](https://github.com/kitian616/jekyll-TeXt-theme/blob/master/CHANGELOG.md)** | **[中文](https://github.com/kitian616/jekyll-TeXt-theme/blob/master/README-zh.md)**
 
-[<img src="https://i.imgur.com/TVI946Z.png" width="250" />](https://youtu.be/VfPa2c9kwhQ)
+## Features
 
----
+- Responsive
+- Semantic HTML
+- Skins
+- Highlight Theme
+- Internationalization
+- Search
+- Table of contents
+- Authors
+- Additional styles (alert, tag, image, icon, button, grid, etc)
+- Extensions (audios, videos, slides, demos)
+- Markdown enhancements ([MathJax](https://www.mathjax.org/), [mermaid](https://mermaidjs.github.io/), [chartjs](http://www.chartjs.org/))
+- Sharing ([AddToAny](https://www.addtoany.com/), [AddThis](https://www.addthis.com/))
+- Comments ([Disqus](https://disqus.com/), [Gitalk](https://gitalk.github.io/), [Valine](https://valine.js.org/en/))
+- Pageview ([LeanCloud](https://leancloud.cn/))
+- Analytics ([Google Analytics](https://analytics.google.com/analytics/web/))
+- RSS ([jekyll-feed](https://github.com/jekyll/jekyll-feed))
 
-### Content Credits :green_heart:
-* [Hero Image](https://images.pexels.com/photos/220444/pexels-photo-220444.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) used as a background image in the very first section of Homepage.
-* [Author Image](https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png) used in the Author Section.
-* [Font Awesome](https://fontawesome.com/)
-* [Poppins Font](https://fonts.google.com/specimen/Poppins)
-* [Memphis Pattern](https://www.freepik.com/free-vector/memphis-pattern-background_4034913.htm#page=1&query=memphis%20pattern&position=23) used for some Social Media Images and the Favicon.
+## Skins
 
----
+TeXt has 6 built-in skins, you can also set up your own skin.
 
-### Credits :bulb:
-* [Sneha Omer](http://sassyecoder.github.io/)
-* [Harsh Trivedi](http://harsh98trivedi.github.io/)
+| `default` | `dark` | `forest` |
+| --- |  --- | --- |
+| ![Default](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/skins_default.jpg) | ![Dark](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/skins_dark.jpg) | ![Forest](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/skins_forest.jpg) |
 
-### License
-The contents of this repository are licensed under the [**GNU General Public License v2.0**](https://github.com/thedevslot/WhatATheme/blob/master/LICENSE)
+| `ocean` | `chocolate` | `orange` |
+| --- |  --- | --- |
+| ![Ocean](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/skins_ocean.jpg) | ![Chocolate](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/skins_chocolate.jpg) | ![Orange](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/skins_orange.jpg) |
+
+### Highlight Theme
+
+TeXt use [Tomorrow](https://github.com/chriskempson/tomorrow-theme) as the highlight theme.
+
+| `tomorrow` | `tomorrow-night` | `tomorrow-night-eighties` | `tomorrow-night-blue` | `tomorrow-night-bright` |
+| --- |  --- | --- | --- |  --- |
+| ![Tomorrow](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/highlight_tomorrow.png) | ![Tomorrow Night](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/highlight_tomorrow-night.png) | ![Tomorrow Night Eighties](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/highlight_tomorrow-night-eighties.png) | ![Tomorrow Night Blue](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/highlight_tomorrow-night-blue.png) | ![Tomorrow Night Bright](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/highlight_tomorrow-night-bright.png) |
+
+## Documentation
+
+### Start
+
+- [Quick Start](https://tianqi.name/jekyll-TeXt-theme/docs/en/quick-start)
+- [Update from 1.x to 2.x](https://tianqi.name/jekyll-TeXt-theme/docs/en/update-from-1-to-2)
+
+### Customization
+
+- [Configuration](https://tianqi.name/jekyll-TeXt-theme/docs/en/configuration)
+- [Navigation](https://tianqi.name/jekyll-TeXt-theme/docs/en/navigation)
+- [Layouts](https://tianqi.name/jekyll-TeXt-theme/docs/en/layouts)
+- [Logo and Favicon](https://tianqi.name/jekyll-TeXt-theme/docs/en/logo-and-favicon)
+- [Authors](https://tianqi.name/jekyll-TeXt-theme/docs/en/authors)
+- [Internationalization](https://tianqi.name/jekyll-TeXt-theme/docs/en/i18n)
+
+### Content
+
+- [Writing Posts](https://tianqi.name/jekyll-TeXt-theme/docs/en/writing-posts)
+- [Additional styles](https://tianqi.name/jekyll-TeXt-theme/docs/en/additional-styles)
+- [Extensions](https://tianqi.name/jekyll-TeXt-theme/docs/en/extensions)
+- [Markdown Enhancements](https://tianqi.name/jekyll-TeXt-theme/docs/en/markdown-enhancements)
+
+## Demo Pages
+
+| Name | Description |
+| --- | --- |
+| [Home](https://tianqi.name/jekyll-TeXt-theme/test/) | Home page |
+| [Archive](https://tianqi.name/jekyll-TeXt-theme/archive.html) | Archive page |
+| [Layout Examples](https://tianqi.name/jekyll-TeXt-theme/samples.html) | Examples for different layouts |
+
+## License
+
+TeXt Theme is [MIT licensed](https://github.com/kitian616/jekyll-TeXt-theme/blob/master/LICENSE).

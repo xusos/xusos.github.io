@@ -4,6 +4,7 @@ date: 2020-04-21 22:56:25
 categories: 技术
 tags:
 - fedora
+- Linux
 author: 未厅堂
 ---
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>

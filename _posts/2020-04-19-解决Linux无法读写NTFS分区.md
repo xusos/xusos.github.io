@@ -3,7 +3,7 @@ title: 解决Linux无法读写NTFS分区
 categories: 技术
 tags:
 - ntfs
-- linux
+- Linux
 - centos
 author: 未厅堂
 ---

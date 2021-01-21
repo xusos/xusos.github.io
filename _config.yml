@@ -129,10 +129,11 @@ comments:
   gitalk:
     clientID    : 9e2f775a186ab2fd3ce0 # GitHub Application Client ID
     clientSecret: 82a63e3abf876afc89f6e2cfe7647d450c929f8b # GitHub Application Client Secret
-    repository  : xusos.github.io # GitHub repo
+    repository  : xusos/xusos.github.io # GitHub repo
     owner       : xusos # GitHub repo owner
     admin       : # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
       # - your GitHub Id
+
 
   ## Valine
   # please refer to https://valine.js.org/en/ for more info.

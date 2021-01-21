@@ -1,0 +1,23 @@
+---
+layout: articles
+titles:
+    en:       MACE
+    zh:       MACE
+    zh-Hans:  MACE
+    zh-Hant:  MACE
+sidebar:
+    nav: DLFramework
+---
+
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "mace" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

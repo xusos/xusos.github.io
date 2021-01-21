@@ -1,0 +1,23 @@
+---
+layout: articles
+titles:
+    en:       3D Reconstruction
+    zh:       三维重建
+    zh-Hans:  三维重建
+    zh-Hant:  三维重建
+sidebar:
+    nav: 3D
+---
+
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "reconstruction" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

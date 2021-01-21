@@ -1,0 +1,23 @@
+---
+layout: articles
+titles:
+    en:       Rockchip
+    zh:       瑞芯微
+    zh-Hans:  瑞芯微
+    zh-Hant:  瑞芯微
+sidebar:
+    nav: DEVICE
+---
+
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "rockchip" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

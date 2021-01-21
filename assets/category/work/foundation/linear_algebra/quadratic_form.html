@@ -1,0 +1,22 @@
+---
+layout: articles
+titles:
+    en:       Quadratic Form
+    zh:       二次型
+    zh-Hans:  二次型
+    zh-Hant:  二次型
+sidebar:
+    nav: LinearAlgebra
+---
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "la_quadratic_form" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

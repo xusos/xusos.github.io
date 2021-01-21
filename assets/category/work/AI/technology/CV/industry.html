@@ -1,0 +1,23 @@
+---
+layout: articles
+titles:
+    en:       Computer Vision·Industry Manufacturing
+    zh:       工业制造
+    zh-Hans:  工业制造
+    zh-Hant:  工业制造
+sidebar:
+    nav: INDUSTRY
+---
+
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "industry" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

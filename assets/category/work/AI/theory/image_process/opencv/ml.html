@@ -1,0 +1,23 @@
+---
+layout: articles
+titles:
+    en:       OpenCV·ml
+    zh:       OpenCV·ml
+    zh-Hans:  OpenCV·ml
+    zh-Hant:  OpenCV·ml
+sidebar:
+    nav: OpenCV
+---
+
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "opencv_ml" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

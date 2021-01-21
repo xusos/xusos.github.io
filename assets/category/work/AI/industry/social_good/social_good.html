@@ -1,0 +1,23 @@
+---
+layout: articles
+titles:
+    en:       Social Good
+    zh:       社会公益
+    zh-Hans:  社会公益
+    zh-Hant:  社会公益
+sidebar:
+    nav: AI
+---
+
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "social_good" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

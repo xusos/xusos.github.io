@@ -1,0 +1,23 @@
+---
+layout: articles
+titles:
+    en:       Reading
+    zh:       阅读
+    zh-Hans:  阅读
+    zh-Hant:  阅读
+sidebar:
+    nav: CV
+---
+
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "reading" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

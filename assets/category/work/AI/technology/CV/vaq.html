@@ -1,0 +1,23 @@
+---
+layout: articles
+titles:
+    en:       Computer Vision·Visual Question Answering
+    zh:       视觉问答
+    zh-Hans:  视觉问答
+    zh-Hant:  视觉问答
+sidebar:
+    nav: CV
+---
+
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "VQA" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

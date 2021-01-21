@@ -1,0 +1,23 @@
+---
+layout: articles
+titles:
+    en:       Computer Vision·OCR
+    zh:       文本·视觉分析
+    zh-Hans:  文本·视觉分析
+    zh-Hant:  文本·视觉分析
+sidebar:
+    nav: CV
+---
+
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "ocr" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

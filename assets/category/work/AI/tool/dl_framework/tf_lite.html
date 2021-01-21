@@ -1,0 +1,23 @@
+---
+layout: articles
+titles:
+    en:       TensorFlow Lite
+    zh:       TensorFlow Lite
+    zh-Hans:  TensorFlow Lite
+    zh-Hant:  TensorFlow Lite
+sidebar:
+    nav: DLFramework
+---
+
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "tf_lite" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

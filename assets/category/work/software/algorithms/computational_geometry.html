@@ -1,0 +1,23 @@
+---
+layout: articles
+titles:
+    en:       Computational Geometry
+    zh:       计算几何
+    zh-Hans:  计算几何
+    zh-Hant:  计算几何
+sidebar:
+    nav: DataStructure
+---
+
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "computational_geometry" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

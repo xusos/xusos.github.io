@@ -1,0 +1,23 @@
+---
+layout: articles
+titles:
+    en:       OpenCV·core
+    zh:       OpenCV·core
+    zh-Hans:  OpenCV·core
+    zh-Hant:  OpenCV·core
+sidebar:
+    nav: OpenCV
+---
+
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "opencv_core" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

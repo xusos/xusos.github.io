@@ -1,0 +1,23 @@
+---
+layout: articles
+titles:
+    en:       Parallel Programming
+    zh:       并行编程
+    zh-Hans:  并行编程
+    zh-Hant:  并行编程
+sidebar:
+    nav: PARALLEL
+---
+
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "parallel" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

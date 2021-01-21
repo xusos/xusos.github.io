@@ -1,0 +1,23 @@
+---
+layout: articles
+titles:
+    en:       Representation Learning
+    zh:       表示学习
+    zh-Hans:  表示学习
+    zh-Hant:  表示学习
+sidebar:
+    nav: DL
+---
+
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "representation" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

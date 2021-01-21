@@ -1,0 +1,23 @@
+---
+layout: articles
+titles:
+    en:       Model Evaluation
+    zh:       模型评估
+    zh-Hans:  模型评估
+    zh-Hant:  模型评估
+sidebar:
+    nav: ML
+---
+
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "model_evaluation" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

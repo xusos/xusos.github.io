@@ -1,0 +1,23 @@
+---
+layout: articles
+titles:
+    en:       Manipulated Detect
+    zh:       人脸篡改检测
+    zh-Hans:  人脸篡改检测
+    zh-Hant:  人脸篡改检测
+sidebar:
+    nav: Human
+---
+
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "manipulated_detect" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

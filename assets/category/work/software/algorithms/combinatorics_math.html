@@ -1,0 +1,23 @@
+---
+layout: articles
+titles:
+    en:       Combinatorics Math
+    zh:       组合数学
+    zh-Hans:  组合数学
+    zh-Hant:  组合数学
+sidebar:
+    nav: DataStructure
+---
+
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "combinatorics_math" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

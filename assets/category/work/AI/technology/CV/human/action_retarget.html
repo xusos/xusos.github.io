@@ -1,0 +1,23 @@
+---
+layout: articles
+titles:
+    en:       Human Action Retarget
+    zh:       动作迁移
+    zh-Hans:  动作迁移
+    zh-Hant:  动作迁移
+sidebar:
+    nav: Human
+---
+
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "human_action_retarget" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

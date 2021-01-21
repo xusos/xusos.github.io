@@ -1,0 +1,23 @@
+---
+layout: articles
+titles:
+    en:       Sequence Alignment
+    zh:       序列对齐
+    zh-Hans:  序列对齐
+    zh-Hant:  序列对齐
+sidebar:
+    nav: DM
+---
+
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "sequence_alignment" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

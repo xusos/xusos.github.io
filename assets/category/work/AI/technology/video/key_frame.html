@@ -1,0 +1,23 @@
+---
+layout: articles
+titles:
+    en:       Key Frame Extract
+    zh:       视频关键帧提取
+    zh-Hans:  视频关键帧提取
+    zh-Hant:  视频关键帧提取
+sidebar:
+    nav: Video
+---
+
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "key_frame" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

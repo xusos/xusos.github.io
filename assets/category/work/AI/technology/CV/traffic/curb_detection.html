@@ -1,0 +1,23 @@
+---
+layout: articles
+titles:
+    en:       Curb Detection
+    zh:       可行驶区域检测
+    zh-Hans:  可行驶区域检测
+    zh-Hant:  可行驶区域检测
+sidebar:
+    nav: Traffic
+---
+
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "curb_detection" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

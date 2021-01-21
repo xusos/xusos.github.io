@@ -1,0 +1,23 @@
+---
+layout: articles
+titles:
+    en:       Greedy Algorithms
+    zh:       贪心算法
+    zh-Hans:  贪心算法
+    zh-Hant:  贪心算法
+sidebar:
+    nav: DataStructure
+---
+
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "greedy" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

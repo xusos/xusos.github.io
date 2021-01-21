@@ -1,0 +1,23 @@
+---
+layout: articles
+titles:
+    en:       Hash Tables
+    zh:       散列表
+    zh-Hans:  散列表
+    zh-Hant:  散列表
+sidebar:
+    nav: DataStructure
+---
+
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "hash_table" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

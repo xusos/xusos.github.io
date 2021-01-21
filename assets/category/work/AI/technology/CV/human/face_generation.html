@@ -1,0 +1,23 @@
+---
+layout: articles
+titles:
+    en:       Face Generation
+    zh:       人脸生成
+    zh-Hans:  人脸生成
+    zh-Hant:  人脸生成
+sidebar:
+    nav: Human
+---
+
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "face_generation" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

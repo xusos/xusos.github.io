@@ -1,0 +1,23 @@
+---
+layout: articles
+titles:
+    en:       fitting_room
+    zh:       虚拟试衣间
+    zh-Hans:  虚拟试衣间
+    zh-Hant:  虚拟试衣间
+sidebar:
+    nav: Human
+---
+
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "fitting_room" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

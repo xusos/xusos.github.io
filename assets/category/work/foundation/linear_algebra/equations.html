@@ -1,0 +1,22 @@
+---
+layout: articles
+titles:
+    en:       Linear Equations
+    zh:       线性方程组
+    zh-Hans:  线性方程组
+    zh-Hant:  线性方程组
+sidebar:
+    nav: LinearAlgebra
+---
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "la_equation" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

@@ -1,0 +1,23 @@
+---
+layout: articles
+titles:
+    en:       Image Outpaint
+    zh:       图像补全
+    zh-Hans:  图像补全
+    zh-Hant:  图像补全
+sidebar:
+    nav: CV
+---
+
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "image_outpaint" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

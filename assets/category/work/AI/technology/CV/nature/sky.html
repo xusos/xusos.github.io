@@ -1,0 +1,23 @@
+---
+layout: articles
+titles:
+    en:       Sky
+    zh:       天空
+    zh-Hans:  天空
+    zh-Hant:  天空
+sidebar:
+    nav: NATURE
+---
+
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "sky" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

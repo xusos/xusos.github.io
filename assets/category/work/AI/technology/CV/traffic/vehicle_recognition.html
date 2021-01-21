@@ -1,0 +1,23 @@
+---
+layout: articles
+titles:
+    en:       Vehicle Recognition
+    zh:       车辆识别
+    zh-Hans:  车辆识别
+    zh-Hant:  车辆识别
+sidebar:
+    nav: Traffic
+---
+
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "vehicle_recognition" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

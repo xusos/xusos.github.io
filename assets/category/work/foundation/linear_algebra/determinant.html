@@ -1,0 +1,22 @@
+---
+layout: articles
+titles:
+    en:       Determinants
+    zh:       行列式
+    zh-Hans:  行列式
+    zh-Hant:  行列式
+sidebar:
+    nav: LinearAlgebra
+---
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "la_determinant" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

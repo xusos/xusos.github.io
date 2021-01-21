@@ -1,0 +1,23 @@
+---
+layout: articles
+titles:
+    en:       Visual Odometry
+    zh:       视觉里程计
+    zh-Hans:  视觉里程计
+    zh-Hant:  视觉里程计
+sidebar:
+    nav: 3D
+---
+
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "visual_odometry" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

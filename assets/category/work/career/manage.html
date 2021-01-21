@@ -1,0 +1,23 @@
+---
+layout: articles
+titles:
+    en:       Manage
+    zh:       管理
+    zh-Hans:  管理
+    zh-Hant:  管理
+sidebar:
+    nav: CAREER
+---
+
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "manage" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

@@ -1,0 +1,23 @@
+---
+layout: articles
+titles:
+    en:       Matrix Operation Algorithms
+    zh:       矩阵算法
+    zh-Hans:  矩阵算法
+    zh-Hant:  矩阵算法
+sidebar:
+    nav: DataStructure
+---
+
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "matrix" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

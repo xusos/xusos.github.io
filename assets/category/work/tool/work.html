@@ -1,0 +1,23 @@
+---
+layout: articles
+titles:
+    en:       Work Tools
+    zh:       工程常用工具
+    zh-Hans:  工程常用工具
+    zh-Hant:  工程常用工具
+sidebar:
+    nav: TOOL
+---
+
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "worktool" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

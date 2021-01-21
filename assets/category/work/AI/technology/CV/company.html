@@ -1,0 +1,23 @@
+---
+layout: articles
+titles:
+    en:       Company of Computer Vision
+    zh:       计算机视觉相关公司
+    zh-Hans:  计算机视觉相关公司
+    zh-Hant:  计算机视觉相关公司
+sidebar:
+    nav: CV
+---
+
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "cv_company" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

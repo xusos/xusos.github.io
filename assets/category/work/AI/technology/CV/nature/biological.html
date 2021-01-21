@@ -1,0 +1,23 @@
+---
+layout: articles
+titles:
+    en:       biological
+    zh:       生物识别
+    zh-Hans:  生物识别
+    zh-Hant:  生物识别
+sidebar:
+    nav: NATURE
+---
+
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "biological" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

@@ -1,0 +1,23 @@
+---
+layout: articles
+titles:
+    en:       Capsule Network
+    zh:       胶囊网络
+    zh-Hans:  胶囊网络
+    zh-Hant:  胶囊网络
+sidebar:
+    nav: DL
+---
+
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "capsnet" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

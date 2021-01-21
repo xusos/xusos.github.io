@@ -1,0 +1,22 @@
+---
+layout: articles
+titles:
+    en:       Meeting
+    zh:       顶会
+    zh-Hans:  顶会
+    zh-Hant:  顶会
+sidebar:
+    nav: AI
+---
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "meeting" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

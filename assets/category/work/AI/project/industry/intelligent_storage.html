@@ -1,0 +1,22 @@
+---
+layout: articles
+titles:
+    en:       Intelligent Storage
+    zh:       智能仓储
+    zh-Hans:  智能仓储
+    zh-Hant:  智能仓储
+sidebar:
+    nav: PROJECT
+---
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "intelligent_storage_pro" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

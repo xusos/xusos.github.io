@@ -1,0 +1,23 @@
+---
+layout: articles
+titles:
+    en:       Defect Inspection
+    zh:       缺陷检测
+    zh-Hans:  缺陷检测
+    zh-Hant:  缺陷检测
+sidebar:
+    nav: INDUSTRY
+---
+
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "defect_inspection" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

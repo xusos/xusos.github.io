@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Mac下安装jekyll遇到的那些坑
 date: 2020-12-30 14:22:48
 categories: 技术

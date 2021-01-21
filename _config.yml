@@ -223,6 +223,3 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap  # 为站点生成站点地图
   - jemoji
-
-  - jekyll-readme-index # 使用readme做index，从而和github渲染效果一致
-  - jekyll-default-layout # 为每个markdown自动生成layout

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Mac下使用国内源安装Homebrew
 date: 2020-12-29 23:00:25
 categories: 技术

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 超详细hexo博客部署到github教程
 categories: 技术
 tags:

@@ -127,11 +127,11 @@ comments:
   ## Gitalk
   # please refer to https://github.com/gitalk/gitalk for more info.
   gitalk:
-    clientID    : bca952c205a9aefd7d6a # GitHub Application Client ID
-    clientSecret: 0b294c12ccc44dc8eaa8fa3a78e4908e2369e4d6 # GitHub Application Client Secret
-    repository  : GitHub repo # GitHub repo
-    owner       : GitHub repo owner # GitHub repo owner
-    admin       : xusos # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
+    clientID    : 'bca952c205a9aefd7d6a' # GitHub Application Client ID
+    clientSecret: '0b294c12ccc44dc8eaa8fa3a78e4908e2369e4d6' # GitHub Application Client Secret
+    repository  : 'GitHub repo' # GitHub repo
+    owner       : 'GitHub repo owner' # GitHub repo owner
+    admin       : 'xusos' # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
       # - your GitHub Id
 
   ## Valine
@@ -147,12 +147,12 @@ comments:
 ## => Pageview
 ##############################
 pageview:
-  provider: false # false (default), "leancloud", "custom"
+  provider: leancloud # false (default), "leancloud", "custom"
 
   ## Leancloud
   leancloud:
-    app_id    : # LeanCloud App id
-    app_key   : # LeanCloud App key
+    app_id    : "x9IXEgpGg7raQsmKl28eO5rC-MdYXbMMI" # LeanCloud App id
+    app_key   : "CAJnd245xaA4xdoESxf3MAJu" # LeanCloud App key
     app_class : # LeanCloud App class
 
 
@@ -223,6 +223,6 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap  # 为站点生成站点地图
   - jemoji
-  
+
   - jekyll-readme-index # 使用readme做index，从而和github渲染效果一致
   - jekyll-default-layout # 为每个markdown自动生成layout

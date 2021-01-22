@@ -19,6 +19,9 @@ author: 未厅堂
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
+
+<span id="head"></span>
+
 * content
 {:toc}
 # Web的新图像格式

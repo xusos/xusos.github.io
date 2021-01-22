@@ -25,6 +25,8 @@ category: [software, openwrt]
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
+<span id='head'></span>
+
 * content
 {:toc}
 编译环境需要Linux系统，本教程使用Ubuntu，其他Linux系统也是可以的(必须可以翻墙) 
@@ -242,3 +244,6 @@ LuCI  --->  Protocols  --->  luci-proto-ipv6
 LuCI  --->  Protocols  --->  luci-proto-ppp 
 Utilities  --->  open-vm-tools  #打开适用于VMware的VM Tools 
 ```
+
+[返回顶部](#head)
+{:.warning}

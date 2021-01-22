@@ -22,6 +22,9 @@ category: [software, github]
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
+
+<span id='head'></span>
+
 * content
 {:toc}
 # 1 、前言
@@ -238,3 +241,6 @@ hexo d == hexo deploy
 hexo s -g #生成并本地预览
 hexo d -g #生成并上传
 ```
+
+[返回顶部](#head)
+{:.warning}

@@ -25,6 +25,8 @@ category: [linux, ubuntu]
 </script>
 * content
 {:toc}
+<span id='head'></span>
+
 使用Deepin wine for Ubuntu and Debian安装微信出错
 https://github.com/wszqkzqk/deepin-wine-ubuntu
 错误信息：
@@ -110,3 +112,6 @@ sudo apt autoremove -fy
 3、然后再重装微信
 使用sudo dpkg -i 命令
 http://mirrors.aliyun.com/deepin/pool/non-free/d/
+
+[返回顶部](#head)
+{:.warning}

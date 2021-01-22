@@ -23,6 +23,9 @@ category: [mac, webp]
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
+
+<span id='head'></span>
+
 * content
 {:toc}
 # 下载webp插件:
@@ -37,3 +40,5 @@ category: [mac, webp]
 3. 然后把解压出来的插件拖进去重启Finder
 
 然后爽爽可以去浏览你的图片了(^.^)!
+[返回顶部](#head)
+{:.warning}

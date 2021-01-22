@@ -78,5 +78,5 @@ webp格式批量转换成png(如果像转换成jpg把png改成jpg)：
 find ./ -name "*.webp" -exec dwebp {} -o {}.png \;
 ```
 
-[End](#head)
-{:.warning}  
+[返回顶部](#head)
+{:.warning}

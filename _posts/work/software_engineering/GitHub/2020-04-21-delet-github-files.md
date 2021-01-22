@@ -22,6 +22,9 @@ category: [software, github]
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
+
+<span id='head'></span>
+
 * content
 {:toc}
 # 在不删除仓库的情况下清空仓库文件
@@ -68,3 +71,5 @@ $  git push origin xxx
 ```bash
 $  git push origin master
 ```
+[返回顶部](#head)
+{:.warning}

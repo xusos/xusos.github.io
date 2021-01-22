@@ -23,6 +23,7 @@ category: [linux, centos]
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
+<span id='head'></span>
 * content
 {:toc}
 # 一、查看当前时区
@@ -49,7 +50,6 @@ Su Mo Tu We Th Fr Sa
 
 
 
-
 #二. 修改设置时区
 | 方法 1：
 ```bash
@@ -63,3 +63,5 @@ Su Mo Tu We Th Fr Sa
 ```bash
 tzselect
 ```
+[返回顶部](#head)
+{:.warning}

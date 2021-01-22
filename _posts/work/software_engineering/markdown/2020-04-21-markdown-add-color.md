@@ -20,6 +20,9 @@ category: [software, markdown]
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
+
+<span id='head'></span>
+
 * content
 {:toc}
 # 一、
@@ -948,3 +951,6 @@ $\color{#0000FF}{blue}$
 </table>
 <p></p>
 -->
+
+[返回顶部](#head)
+{:.warning}

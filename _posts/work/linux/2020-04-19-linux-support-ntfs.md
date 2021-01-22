@@ -23,7 +23,7 @@ category: [linux]
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-
+<span id='head'></span>
 * content
 {:toc}
 # 安装ntfs-3g
@@ -35,9 +35,6 @@ https://www.tuxera.com/community/open-source-ntfs-3g/
     make
     make install #OR 'sudo make install'
 ```
-
-
-
 
 # 新建文件
 ```bash
@@ -58,3 +55,6 @@ chmod a+x /sbin/mount.ntfs
 ```
 # Done !
 愉快的使用吧~即插即用特别爽！
+
+[返回顶部](#head)
+{:.warning}

@@ -24,6 +24,8 @@ category: [linux, fedora]
 </script>
 * content
 {:toc}
+<span id='head'></span>
+
 Fedora是一个功能强大的Linux发行版，但它有一个严重的缺点：DNF包管理器，与Ubuntu和Debian的Apt，Arch的Pacman，甚至是OpenSUSE的Zypper相比比较慢。本文介绍提高Fedora Linux应用程序安装速度的方法：升级Fedora、安装最新更新、设置DNF以使用尽可能快的镜像、更改DNF以一次下载多个包。
 
 
@@ -111,3 +113,5 @@ $ dnf remove $package
 $ dnf help
 ```
 PS：man dnf 就会用啦
+[返回顶部](#head)
+{:.warning}

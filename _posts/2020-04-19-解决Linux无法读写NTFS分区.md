@@ -1,4 +1,5 @@
 ---
+layout: article
 title: 解决Linux无法读写NTFS分区
 categories: 技术
 tags:

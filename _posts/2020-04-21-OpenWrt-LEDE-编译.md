@@ -1,4 +1,5 @@
 ---
+layout: article
 title: OpenWrt(LEDE)编译
 date: 2020-04-15 15:03:59
 categories: 技术

@@ -1,4 +1,5 @@
 ---
+layout: article
 title: Macos上如何把图片转换成webp格式
 date: 2021-01-04 14:22:48
 categories: 技术
@@ -67,6 +68,7 @@ find ./ -name "*.jpg" -exec cwebp {} -o {}.webp \;
 webp格式批量转换成png(如果像转换成jpg把png改成jpg)：
 ```bash
 find ./ -name "*.webp" -exec dwebp {} -o {}.png \;
-
-
 ```
+
+[End](#head)
+{:.warning}  

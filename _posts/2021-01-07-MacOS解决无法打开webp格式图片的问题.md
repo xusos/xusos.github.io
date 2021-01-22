@@ -1,4 +1,5 @@
 ---
+layout: article
 title: MacOS解决无法打开webp格式图片的问题
 date: 2021-01-07 14:22:48
 categories: 技术

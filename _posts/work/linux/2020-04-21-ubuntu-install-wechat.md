@@ -23,12 +23,13 @@ category: [linux, ubuntu]
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-* content
-{:toc}
+
 <span id='head'></span>
 
 使用Deepin wine for Ubuntu and Debian安装微信出错
 https://github.com/wszqkzqk/deepin-wine-ubuntu
+
+<!--more-->
 错误信息：
 
 ```bash

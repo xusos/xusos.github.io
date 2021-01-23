@@ -24,8 +24,7 @@ category: [linux, centos]
 </script>
 
 <span id='head'></span>
-* content
-{:toc}
+
 # 一、查看当前时区
 ```bash
 date -R
@@ -47,7 +46,7 @@ Su Mo Tu We Th Fr Sa
 31
 [root@v2-bsd ~]#
 ```
-
+<!--more-->
 
 
 #二. 修改设置时区

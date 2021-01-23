@@ -2,14 +2,13 @@
 layout: article
 title: 超详细hexo博客部署到github教程
 date: 2020-04-21 00:28:59
-categories: 技术
 tags:
 - hexo
 author: 未厅堂
 key: install-blog-on-github-20201229
 aside:
   toc: true
-category: [software, github]
+category: [tool, blog]
 ---
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -25,8 +24,6 @@ category: [software, github]
 
 <span id='head'></span>
 
-* content
-{:toc}
 # 1 、前言
 使用github pages服务搭建博客的好处有：
 
@@ -37,7 +34,7 @@ category: [software, github]
 5. 博客内容可以轻松打包、转移、发布到其它平台；
 6. 等等；
 
-
+<!--more-->
 
 
 ### 1.1、工欲善其事，必先利其器

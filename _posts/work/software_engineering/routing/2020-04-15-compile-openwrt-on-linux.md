@@ -27,15 +27,15 @@ category: [software, openwrt]
 
 <span id='head'></span>
 
-* content
-{:toc}
+# * content
+# {:toc}
 编译环境需要Linux系统，本教程使用Ubuntu，其他Linux系统也是可以的(必须可以翻墙) 
 注意:
 1.  不要用 root 用户 git 和编译！！!
 2.  国内用户编译前最好准备好梯子 
 3.  默认登陆IP 192.168.1.1, 密码 password 
  
-
+<!--more-->
 
 
 ####  编译命令如下: 

@@ -23,15 +23,16 @@ category: [software, markdown]
 
 <span id='head'></span>
 
-* content
-{:toc}
+# * content
+# {:toc}
+
 # 一、
 ```html
 $\color{#0000FF}{blue}$
 ```
 效果 $\color{#0000FF}{blue}$ 注意：这个方法在hexo文章中无法渲染成功，如果在hexo中使用的话请注意
 
-
+<!--more-->
 
 
 # 二、表格文字添加颜色，套用 html

@@ -24,8 +24,7 @@ category: [linux]
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 <span id='head'></span>
-* content
-{:toc}
+
 # 安装ntfs-3g
 下载NTFS-3G：
 https://www.tuxera.com/community/open-source-ntfs-3g/
@@ -35,7 +34,7 @@ https://www.tuxera.com/community/open-source-ntfs-3g/
     make
     make install #OR 'sudo make install'
 ```
-
+<!--more-->
 # 新建文件
 ```bash
 touch /sbin/mount.ntfs

@@ -25,12 +25,13 @@ category: [software, github]
 
 <span id='head'></span>
 
-* content
-{:toc}
+# * content
+# {:toc}
+
 # 在不删除仓库的情况下清空仓库文件
 
 由于自己是个小白，仓库文件经常搞乱，推送到仓库无法更新，只能清空重新上传，记录下清空仓库的方法
-
+<!--more-->
 
 1. 先在本地仓库对要进行文件删除的远程仓库clone；
 

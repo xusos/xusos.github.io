@@ -24,14 +24,13 @@ category: [mac, jekyll]
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-* content
-{:toc}
+
 <span id='head'></span>
 &nbsp;&nbsp;今天踩坑了，用gem安装jekyll的时候各种报错，网上的一些解决方法，要不就是行不通，要不就是零散破碎不完整，花了点时间把这个问题搞定，整理完之后顺便分享一下，帮助大家节省一点时间。
 When using gem to install or update some packages, there may be some wired problems and messages pop-up. If you met same problems like me, here are the reason and solution.
 起因(Start)
 构建Github Pages免不了要和jekyll打交道，至于它是什么，看这里。网上有个不错的教程，可惜仅限中文，跟着教程走，在安装jekyll的时候出了问题。偏偏又是我，好吧已经习惯了。先看看是什么问题：
-
+<!--more-->
 &nbsp;&nbsp;When I try to build up my github pages, I need to install jekyll, (what is it? click here) and when I install jekyll, the below message pop-up. Apparentlly, something wrong!
 
 

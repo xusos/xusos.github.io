@@ -26,13 +26,11 @@ category: [mac, webp]
 
 <span id='head'></span>
 
-* content
-{:toc}
+
 # 下载webp插件:
 1. WebP 扩展插件下载地址 https://github.com/dchest/webp-quicklook/releases
 
-
-
+<!--more-->
 
 2. 打开Finder->前往->前往文件夹->输入``` ~/Library/QuickLook/``` ->前往
 ![](https://gitee.com/xusoso/image/raw/master/image/%E6%88%AA%E5%B1%8F2021-01-07%20%E4%B8%8B%E5%8D%888.31.53.png)

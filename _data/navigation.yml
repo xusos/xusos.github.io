@@ -219,7 +219,7 @@ School:
       - title:  矩阵论
         url:    /assets/category/work/foundation/matrix_theory.html
 
-C++:
+C:
   - title:
     children:
       - title:  上一层
@@ -230,7 +230,7 @@ C++:
     children:
       - title:  上一层
         url:    /assets/category/work/software/software.html
-        
+
   - title:
     children:
       - title:  基础知识

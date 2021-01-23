@@ -90,6 +90,8 @@ Software:
     children:
       - title:  编程基础
         url:    /assets/category/work/software/grammer/foundation.html
+      - title:  C
+        url:    /assets/category/work/software/grammer/c.html
       - title:  C++
         url:    /assets/category/work/software/grammer/cpp.html
       - title:  python
@@ -222,6 +224,13 @@ C++:
     children:
       - title:  上一层
         url:    /assets/category/work/software/software.html
+
+C++:
+  - title:
+    children:
+      - title:  上一层
+        url:    /assets/category/work/software/software.html
+        
   - title:
     children:
       - title:  基础知识

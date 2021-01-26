@@ -14,21 +14,11 @@ aside:
 category: [software, openwrt]
 ---
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-1334509736068927"
-     data-ad-slot="4348838154"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
 <span id='head'></span>
 
-# * content
-# {:toc}
+<!-- * content
+{:toc}
+-->
 编译环境需要Linux系统，本教程使用Ubuntu，其他Linux系统也是可以的(必须可以翻墙) 
 注意:
 1.  不要用 root 用户 git 和编译！！!

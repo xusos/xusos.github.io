@@ -34,7 +34,7 @@ github_username:  xusos
 markdown: kramdown
 # theme: minima
 # theme: jekyll-theme-minimal
-theme: jekyll-text-theme
+theme: jekyll-theme-slate
 
 ## => Plugins
 ##############################

@@ -34,7 +34,7 @@ github_username:  xusos
 markdown: kramdown
 # theme: minima
 # theme: jekyll-theme-minimal
-theme: jekyll-text-theme
+theme: jekyll-theme-slate
 
 ## => Plugins
 ##############################
@@ -139,7 +139,7 @@ comments:
   gitalk:
     clientID    : 9e2f775a186ab2fd3ce0 # GitHub Application Client ID
     clientSecret: 82a63e3abf876afc89f6e2cfe7647d450c929f8b # GitHub Application Client Secret
-    repository  : www.loeso.com # GitHub repo
+    repository  : xusos.github.io # GitHub repo
     owner       : xusos # GitHub repo owner
     admin:  # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
       - xusos
@@ -154,7 +154,7 @@ pageview:
   leancloud:
     app_id    : x9IXEgpGg7raQsmKl28eO5rC-MdYXbMMI # LeanCloud App id
     app_key   : CAJnd245xaA4xdoESxf3MAJu # LeanCloud App key
-    app_class : Test # LeanCloud App class
+    app_class : hexo # LeanCloud App class
 
 
 ## => Analytics

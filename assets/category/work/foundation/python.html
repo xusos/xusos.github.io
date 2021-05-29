@@ -1,17 +1,17 @@
 ---
 layout: articles
 titles:
-    en:       Linux
-    zh:       Linux
-    zh-Hans:  Linux
-    zh-Hant:  Linux
+    en:       Python
+    zh:       Python
+    zh-Hans:  Python
+    zh-Hant:  Python
 sidebar:
-    nav: Linux
+    nav: Python
 ---
 
 <ul>
     {% for cat in site.categories %}
-        {% if cat[0] == "linux" %}
+        {% if cat[0] == "Python" %}
         {% for post in cat[1] %}
         {{post.date | date:"%d/%m/%Y"}}
         <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>

@@ -210,8 +210,6 @@ School:
         url:    /assets/category/work/foundation/linux.html
       - title:  English
         url:    /assets/category/work/foundation/english.html
-      - title:  Python
-        url:    /assets/category/work/foundation/python.html
       - title:  微积分
         url:    /assets/category/work/foundation/calculus.html
       - title:  线性代数

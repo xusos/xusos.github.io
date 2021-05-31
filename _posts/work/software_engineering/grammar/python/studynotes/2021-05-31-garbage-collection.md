@@ -2,7 +2,7 @@
 layout: article
 title:  "「Python」 Python语法入门之垃圾回收机制"
 date:   2021-05-31 23:14:16 +0800
-key: python-variable-20210530
+key: python-lajihuishou-20210531
 aside:
   toc: true
 category: [software, python, stnotes]

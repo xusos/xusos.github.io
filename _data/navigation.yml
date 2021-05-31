@@ -254,6 +254,8 @@ Python:
         url:    /assets/category/work/software/software.html
   - title:
     children:
+      - title:  学习笔记
+        url:    /assets/category/work/software/grammer/python/Studynotes.html    
       - title:  入门
         url:    /assets/category/work/software/grammer/python/foundation.html
       - title:  标准库

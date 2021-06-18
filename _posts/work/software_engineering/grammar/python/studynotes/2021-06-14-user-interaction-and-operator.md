@@ -285,10 +285,12 @@ author: 未厅堂
     False 
     ```
 - 2.5 成员运算符
+- 
     |成员运算符|描述|示例|
     |:---:|:---|:---|
     |in|某一个对象包含于另外一个对象则返回True<bt>字符串、列表、元组、字典、集合都支持成员运算|>>> 'hello' in 'hello world' <br> True <br> >>> 'yyy' in ['xxx','yyy','mmm'] <br> True <br> >>> 'age' in {'name':'lili','age':18} <br> True <br> # 判断的是字典的key <br> >>> 18 in {'name':'lili','age':18} <br> False|
-    |not in|摸一个对象没有包含于另外一个对象则返回True| >>> 'abc' not in 'hello world' <br> True
+    |not in|摸一个对象没有包含于另外一个对象则返回True| >>> 'abc' not in 'hello world' <br> True|
+
     `注意：虽然下述两种判断可以达到相同的效果，但我们推荐使用第二种格式，因为not in语义更加明确`{:.warning}
     ```python
     >>> not 'lili' in ['jack','tom','robin']
@@ -297,6 +299,7 @@ author: 未厅堂
     True
     ```
 - 2.6 身份运算符
+ 
   |身份运算符|描述|示例|
   |:---:|:---|:---|
   |is|is比较的是id(内存地址)，两个对象的id相同则返回True|>>> m = 'xxx'<br> >>> n = 'yyy' <br> >>> id(m),id(n) # m与n的id不同 <br> (61385312, 61385344)|

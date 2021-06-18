@@ -92,13 +92,29 @@ author: 未厅堂
           age = input('your age is :')
           sex = input('your sex is:')
           job = input('your job is :')
-          print(
-          'Name : %s \n'，'Aage : %s \n'，'Sex : %s \n' 'Job : %s \n' % (name,age,sex,job)
-          )
+
+          print('info of tony'.center(20,'-'))
+          print('\nName : %s \n' 'Aage : %s \n' 'Sex : %s \n' 'Job : %s \n' % (name,age,sex,job))
+          print('end'.center(20,'-'))
 
          ```
 # 二、基本运算符
 - 2.1 算术运算符
+ python支持得算法运算符与数学上计算得符号使用是一致得，我们以x = 9, y = 2 为例一次介绍他们：
+
+  |算术运算符|描述              |示例       |
+  |---------|------------------|-----------|
+  |+        |加，两个对象相加   |x + y 得 11|
+  |   -     |减，两个对象相减   |x - y 得 -7|
+  |*        |乘，两个对象相乘   |x * y 得 18|
+  |/        |除，相除后得到的返回值会保留证书与小数部分|x / y 得 4.5|
+  |//       |取整除，相除后得到得返回值只保留整数部分|x // y 得 4|
+  |%        |取余，相除后只返回余数|x % y 得1|
+  |**       |冥，取一个数得n次方|x ** y 得 81|
+
+
+
+
 - 2.2 比较运算符
 - 2.3 赋值运算符
   - 2.3.1 增量赋值

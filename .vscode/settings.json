@@ -1,5 +1,5 @@
 {
-    "fileheader.tpl": "--- \\r\\nlayout: article \\r\\ntitle:  \"title\" \\r\\ndate: {createTime} +0800 \\r\\nkey: python-lajihuishou-{updateTime} \\r\\naside:\\r\\n\\ttoc: true \\r\\ncategory: [software, python, stnotes] \\r\\ntags:\\r\\n\\tpython \\r\\nauthor: {author} \\r\\n--- \\r\\n \\r\\n<span id='head'></span>\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n-------------------\\r\\n[返回顶部](#head)\\r\\n{:.warning}",
+    "fileheader.tpl": "--- \\r\\nlayout: article \\r\\n「xxx」title:  \"title\" \\r\\ndate: {createTime} +0800 \\r\\nkey: python-lajihuishou-{updateTime} \\r\\naside:\\r\\n\\ttoc: true \\r\\ncategory: [software, python, stnotes] \\r\\ntags:\\r\\n\\tpython \\r\\nauthor: {author} \\r\\n--- \\r\\n \\r\\n<span id='head'></span>\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n-------------------\\r\\n[返回顶部](#head)\\r\\n{:.warning}",
     "fileheader.LastModifiedBy": "未厅堂",
     "fileheader.Author": "未厅堂"
 }

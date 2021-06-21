@@ -2,7 +2,7 @@
 layout: article 
 title:  "「VsCode」vscode-fileheader插件安装配置" 
 date: 2021-06-20 14:25:28 +0800 
-key: tool-vscode-2021-06-20 14:25:28 
+key: tool-vscode-20210620
 aside:
 	toc: true 
 category: [software, tool, vscode] 

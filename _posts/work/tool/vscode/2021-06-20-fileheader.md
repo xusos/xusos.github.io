@@ -24,7 +24,7 @@ author: 未厅堂
 "fileheader.LastModifiedBy": "Cong.Bu"
 Fileheader: Tpl
 
-#3、使用
+# 3、使用
 window系统使用**Ctrl+Alt+i**，mac系统使用**control+option+i**即可在文件顶部生成
 
 自己的Fileheader: Tpl配置参数：

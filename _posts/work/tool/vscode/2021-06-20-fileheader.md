@@ -14,7 +14,7 @@ author: 未厅堂
 <span id='head'></span>
 
 # 1、安装vscode-fileheader插件
-点击左下角齿轮搜索：vscode-fileheader
+点击左下角齿轮搜索：**vscode-fileheader**
 
 # 2、配置
 在设置中搜索**fileheader**

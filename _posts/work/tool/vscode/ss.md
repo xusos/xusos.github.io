@@ -1,8 +1,8 @@
 --- 
 layout: article 
-title:  "「Python」基本数据类型及内置方法" 
-date: 2021-06-20 14:18:10 +0800 
-key: python-typeanddate-20210620
+title:  "title" 
+date: 2021-06-21 22:55:55 +0800 
+key: python-lajihuishou-2021-06-21 22:55:55 
 aside:
    toc: true 
 category: [software, python, stnotes] 
@@ -12,6 +12,10 @@ author: 未厅堂
 --- 
  
 <span id='head'></span>
+
+
+
+
 
 
 

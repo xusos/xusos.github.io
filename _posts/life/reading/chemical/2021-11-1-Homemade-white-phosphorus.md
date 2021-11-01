@@ -9,7 +9,6 @@ category: [life, Chemical, homemade]
 tags: 白磷
 ---
 <span id='head'></span>
-
 <!--more-->   
 <span id='head'></span>
 

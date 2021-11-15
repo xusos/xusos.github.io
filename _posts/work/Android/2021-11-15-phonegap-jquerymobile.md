@@ -32,19 +32,20 @@ jquerymobile和Phonegap 搭建跨平台开发环境
          5、用phonegap –version和cordova -version测试安装成功与否
 **四、构建Android工程**
          1、命令行进入准备存放工程文件夹，本机是cd D:\wkspace\phonegap，然后输入phonegap create  CCU,其中CCU是我的phonegap工程名称，如下图所示
-创建完的phonegap工程结构如下图所示，此处仅仅是创建了一个phonegap工程，我们还需要在下一步去构建一个Android工程，phonegap仅仅是一个壳。
+
+![1](https://github.com/xusos/note-images/raw/main/images/20160616093602056)
+
+创建完的phonegap工程结构如下图所示，此处仅仅是创建了一个phonegap工程，我们还需要在下一步去构建一个Android工程，
+
+![2](https://github.com/xusos/note-images/raw/main/images/20160616093627975)
+
+phonegap仅仅是一个壳。
          2、进入到CCU文件夹，输入phonegapbuild Android之后按回车，build之后成功界面如下所示
+![3](https://github.com/xusos/note-images/raw/main/images/20160616093655288)
 
          3、打开Androidstudio，选择platforms下文件夹里，选择android文件夹，选择之后andriodstudio会自动的gradlebuild，不过会花费很长时间，并且需要翻墙，成功之后就可以运行了，一个完整的过程就结束了
 
-
-
-
-
-
-
-
-
+![4](https://github.com/xusos/note-images/raw/main/images/20160616093709226)
 
 -------------------
 [返回顶部](#head)

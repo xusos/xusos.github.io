@@ -1,6 +1,6 @@
 ---
 layout: article
-title:  "「xxx」jquerymobile和Phonegap 搭建跨平台开发环境"
+title:  "「Android」jquerymobile和Phonegap 搭建跨平台开发环境"
 date:   2021-11-15 01:34:41 +0800
 key: python-lajihuishou-2021-11-15 01:34:41 
 aside:

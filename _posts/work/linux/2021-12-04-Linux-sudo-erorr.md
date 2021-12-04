@@ -7,7 +7,7 @@ aside:
   toc: true 
 category: [software, linux, sudo] 
 tags:
-  python 
+  linux
 author: 未厅堂 
 --- 
  

@@ -23,20 +23,20 @@ sidebar:
 
 # 2 磁盘
 ## 2.1 挂载
->**挂载**：把物理磁盘挂载到文件系统下的一个目录；     
+>**挂载**：把物理磁盘挂载到文件系统下的一个目录；
 mount 可显示[系统挂载情况](#mount_info)；  
 
 挂载本地磁盘：`mount` [`-t`](#mount_help)  [`type`](#file_type) `device` `directory`        
 挂载 iso 文件：`mount` `-t` [`ios9660`](#file_type) `-o` [`loop`](#loop) `file.iso` `directory`       
 挂载远程磁盘：`mount` `-t` [`nfs`](#mount_help) [`IP:/dir`](#install_nfs) `directory` [报错](#nfs_error)       
 卸载：`umount [directory | device]`     
-开机自动挂载：在 `/etc/rc.local` 中加入挂载命令；    
-{:.info}    
+开机自动挂载：在 `/etc/rc.local` 中加入挂载命令；
+{:.info}
 
 
 
 $\bullet$ **系统挂载情况**     
-`mount`：该命令会输出设备名称、挂载点、文件系统类型和访问状态；     
+`mount`：该命令会输出设备名称、挂载点、文件系统类型和访问状态；
 
 <span id="mount_help"></span>     
 $\bullet$ **常用参数**    

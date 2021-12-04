@@ -2,10 +2,10 @@
 layout: article
 title:  "「Linux」解决linux下sudo更改文件权限报错"xxx is not in the sudoers file. This incident will be reported."
 date:   2021-12-04 14:44:35 +0800
-key: python-lajihuishou-2021-12-04 14:44:35 
+key: linux-2021-12-04 14:44:35 
 aside:
   toc: true 
-category: [software, python, stnotes] 
+category: [software, linux, sudo] 
 tags:
   python 
 author: 未厅堂 

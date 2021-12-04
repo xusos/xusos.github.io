@@ -1,8 +1,8 @@
 ---
 layout: article
-title:  "「Linux」解决linux下sudo更改文件权限报错"xxx is not in the sudoers file. This incident will be reported."
+title:  「Linux」解决Linux下sudo更改文件权限报错"xxx is not in the sudoers file. This incident will be reported."
 date:   2021-12-04 14:44:35 +0800
-key: linux-2021-12-04 14:44:35 
+key: Linux-2021-12-04 14:44:35 
 aside:
   toc: true 
 category: [software, linux, sudo] 

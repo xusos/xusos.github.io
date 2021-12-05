@@ -19,14 +19,35 @@ author: 未厅堂
 
 　　方法为直接在命令行输入：**su**，然后输入密码（即你的登录密码，且密码默认不可见）。
 
-## 2./etc/sudoers文件默认是只读的，对root来说也是，因此需先添加sudoers文件的写权限,命令是:
+## 2.修改sudoers权限
 
-即执行操作：**chmod u+w /etc/sudoers**
+**/etc/sudoers**文件默认是只读的，对**root**来说也是，因此需先添加**sudoers**文件的写权限,命令是:
+
+即执行操作：
+
+```shell
+chmod u+w /etc/sudoers
+```
 
 ## 3.编辑sudoers文件
 
-即执行：**vi /etc/sudoers**
-找到这行 **root ALL=(ALL) ALL**,在他下面添加**xxx ALL=(ALL) ALL** (这里的xxx是你的用户名)
+即执行：
+
+```shell
+vi /etc/sudoers
+```
+
+找到这行 
+
+```shell
+root ALL=(ALL) ALL
+```
+
+在他下面添加
+
+```shell
+xxx ALL=(ALL) ALL  (这里的xxx是你的用户名)
+```
 
 [ps:](#mount_info)这里说下你可以**sudoers**添加下面四行中任意一条
 

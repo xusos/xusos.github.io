@@ -13,7 +13,8 @@ author: 未厅堂
  
 <span id='head'></span>
 
-> **Linux**中普通用户用**sudo**执行命令时报”xxx is not in the sudoers file.This incident will be reported”错误，解决方法就是在 **/etc/sudoers** 文件里给该用户添加权限。如下：
+> **Linux**中普通用户用**sudo**执行命令时报”xxx is not in the sudoers file.This incident will be reported”错误，
+> 解决方法就是在 **/etc/sudoers** 文件里给该用户添加权限。如下：
 
 ## 1.切换到root用户下
 

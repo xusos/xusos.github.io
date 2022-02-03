@@ -1,18 +1,17 @@
 ---
 layout: article
-title: 「Mac」Appellation Controlee
-date: 2021-01-07 14:22:48
+title: 「Life」红酒Appellation Controlee标签的说明
+date: 2022-01-15 21:04:53 +0800
 categories: 生活
 tags:
 - 红酒
 - wine
 author: 未厅堂
-key: life-wine-20220118
+key: life-wine-20220115
 aside:
   toc: true
 category: [life, wine]
 ---
-
 
 <span id='head'></span>
 
@@ -21,6 +20,9 @@ category: [life, wine]
 > Appellation Bordeaux  Controlee，法国酒标上 Appellation、 Controlee 这两个单词中间的地名最终决定葡萄酒品质。这两个单词分别是原产地和控制的意思，表示产地限制，这两个单词会有葡萄酒的产地名称，这个产地名称范围越小，葡萄酒越高级。
 
 <!--more-->
+
+
+![](https://raw.githubusercontent.com/xusos/note-images/main/images/AOC(2).jpg)
 
 &emsp;&emsp;经常喝法国葡萄酒的朋友，都知道法国葡萄酒AOC制度。AOC泛指符合法定产区标准的法国葡萄酒，AOC直译为：原产地命名控制制度。其核心意义是什么？我的理解是：根据产地原则，限制再限制。   首先，从工艺上的限制，任何产地历年的制作工艺要严格一致，包括酿造工艺和葡萄配比。不同葡萄品种的配比也被严格限定，不能因年景不同任意变更，主料一般占80%以上，这个百分比是被严控的，差一个百分点都不行，如果您的果园今年作为辅料的美乐葡萄歉收，那没办法，您就只能相应全部减产。 
 

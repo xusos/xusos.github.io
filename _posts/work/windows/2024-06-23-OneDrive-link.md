@@ -10,7 +10,7 @@ author: 未厅堂
 key: OneDrive-syn-other-directory-20240623
 aside:
   toc: true
-category: [software, onedrive, windows]
+category: [software, windows, onedrive]
 ---
 <span id='head'></span>
 

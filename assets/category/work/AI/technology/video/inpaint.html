@@ -1,0 +1,23 @@
+---
+layout: articles
+titles:
+    en:       Video Inpaint
+    zh:       视频修复
+    zh-Hans:  视频修复
+    zh-Hant:  视频修复
+sidebar:
+    nav: Video
+---
+
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "video_inpaint" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

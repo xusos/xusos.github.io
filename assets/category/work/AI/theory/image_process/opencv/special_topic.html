@@ -1,0 +1,23 @@
+---
+layout: articles
+titles:
+    en:       Special Topic
+    zh:       OpenCV 专题
+    zh-Hans:  OpenCV 专题
+    zh-Hant:  OpenCV 专题
+sidebar:
+    nav: OpenCV
+---
+
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "opencv_special_topic" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

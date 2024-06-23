@@ -1,0 +1,23 @@
+---
+layout: articles
+titles:
+    en:       Computer Vision·Vehicle
+    zh:       车·视觉分析
+    zh-Hans:  车·视觉分析
+    zh-Hant:  车·视觉分析
+sidebar:
+    nav: VEHICLE
+---
+
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "vehicle" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

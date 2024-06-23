@@ -1,0 +1,22 @@
+---
+layout: articles
+titles:
+    en:       Matrix Theory
+    zh:       矩阵论
+    zh-Hans:  矩阵论
+    zh-Hant:  矩阵论
+sidebar:
+    nav: MatrixTheory
+---
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "矩阵论" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

@@ -1,0 +1,203 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+## => Site Settings
+##############################
+text_skin: forest # "default" (default), "dark", "forest", "ocean", "chocolate", "orange"
+# 代码高亮
+highlight_theme: default # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
+title: 未厅堂
+email: xusos@live.com
+description: >- # this means to ignore newlines until "baseurl:"
+  smartadople
+  深度学习
+  计算机视觉
+baseurl: "" # the subpath of your site, e.g. /blog
+url: https://www.loeso.com
+#twitter_username: jekyllrb
+github_username:  xusos
+
+# Build settings
+markdown: kramdown
+# theme: minima
+# theme: jekyll-theme-minimal
+theme: jekyll-theme-slate
+#theme: jekyll-text-theme
+
+## => Plugins
+##############################
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jemoji
+
+## => Language and Timezone
+##############################
+lang: "zh" # the language of your site, "en" (default, English), "zh"(简体中文), "zh-Hans"(简体中文), "zh-Hant"(繁體中文)
+timezone: # see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for the available values
+
+
+## => Author and Social
+##############################
+author:
+  type      : # "person" (default), "organization"
+  name      : 未厅堂
+#  url       :
+#  avatar    : # path or url of avatar image
+#  bio       : I am an amazing person.
+  email     : xusos@live.com
+#  facebook  : # "user_name" the last part of your profile url, e.g. https://www.facebook.com/user_name
+#  twitter   : # "user_name" the last part of your profile url, e.g. https://twitter.com/user_name
+#  googleplus: # "user_id"   the last part of your profile url, e.g. https://plus.google.com/u/0/user_id
+#  weibo     : # "user_id"   the last part of your profile url, e.g. https://www.weibo.com/user_id/profile?...
+#  douban    : # "user_name" the last part of your profile url, e.g. https://www.douban.com/people/user_name/
+#  linkedin  : # "user_name" the last part of your profile url, e.g. https://www.linkedin.com/in/user_name/
+  github    : xusos # "user_name" the last part of your profile url, e.g. https://github.com/user_name
+#  npm       : # "user_name" the last part of your profile url, e.g. https://www.npmjs.com/~user_name
+#  telegram  : # "user_name" the last part of your profile url, e.g. https://t.me/user_name
+
+
+## => GitHub Repository (if the site is hosted by GitHub)
+##############################
+repository: xusos/xusos.github.io
+repository_tree: master
+
+
+## => Paths
+##############################
+paths:
+  root    : # title link url, "/" (default)
+  home    : # home layout url, "/" (default)
+  archive : # "/archive.html" (default)
+  rss     : # "/feed.xml" (default)
+
+
+## => Post
+##############################
+## excerpt
+excerpt_separator: <!--more-->
+
+## license
+license: CC-BY-4.0 #CC-BY-NC-4.0 # "CC-BY-4.0", "CC-BY-SA-4.0", "CC-BY-NC-4.0", "CC-BY-ND-4.0"
+
+## TOC
+toc:
+  selectors: # "h1,h2,h3" (default)
+
+
+## => Markdown Enhancements
+##############################
+## Mathjax
+mathjax: true # false (default), true
+mathjax_autoNumber: true # false (default), true
+MathML: true
+LaTeX: true
+ASCIIMathML: true
+
+## Mermaid
+mermaid: true # false (default), true
+
+## Chart
+chart: # false (default), true
+
+
+## => Paginate
+##############################
+paginate: 20
+paginate_path: /page:num # don't change this unless for special need
+
+
+## => Sources
+##############################
+sources: # bootcdn (default), unpkg
+
+
+## => Comments
+##############################
+comments:
+  provider: gitalk # false (default), "disqus", "gitalk", "custom"
+
+  ## Disqus
+  disqus:
+    shortname: # the Disqus shortname for the site
+
+  ## Gitalk
+  # please refer to https://github.com/gitalk/gitalk for more info.
+  gitalk:
+    clientID    : 9e2f775a186ab2fd3ce0 # GitHub Application Client ID
+    clientSecret: 82a63e3abf876afc89f6e2cfe7647d450c929f8b # GitHub Application Client Secret
+    repository  : xusos.github.io # GitHub repo
+    owner       : xusos # GitHub repo owner
+    admin:      # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
+      - xusos
+      
+## => Pageview
+##############################
+pageview:
+  provider: leancloud # false (default), "leancloud", "custom"
+
+  ## Leancloud
+  leancloud:
+    app_id    : x9IXEgpGg7raQsmKl28eO5rC-MdYXbMMI # LeanCloud App id
+    app_key   : CAJnd245xaA4xdoESxf3MAJu # LeanCloud App key
+    app_class : hexo # LeanCloud App class
+
+
+## => Analytics
+##############################
+analytics:
+  provider: google # false (default), "google", "custom"
+
+  ## Google Analytics
+  google:
+    tracking_id : UA-52772343-4 # Google Analytics id for the site
+    anonymize_ip: true # Anonymize IP tracking for Analytics
+
+
+## => Build
+##############################
+markdown    : kramdown
+highlighter : rouge
+permalink   : date
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/ 
+#   - vendor/ruby/
+  - readme.md
+  - LICENSE
+  - nohup.out
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: article
+      license: true
+      aside:
+        toc: true
+      show_edit_on_github: true
+      pageview: true
+

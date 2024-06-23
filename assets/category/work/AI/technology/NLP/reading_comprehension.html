@@ -1,0 +1,23 @@
+---
+layout: articles
+titles:
+    en:       Machine Reading Comprehension
+    zh:       机器阅读理解
+    zh-Hans:  机器阅读理解
+    zh-Hant:  机器阅读理解
+sidebar:
+    nav: NLP
+---
+
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "reading_comprehension" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

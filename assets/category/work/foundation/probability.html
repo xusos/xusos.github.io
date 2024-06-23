@@ -1,0 +1,22 @@
+---
+layout: articles
+titles:
+    en:       Probability
+    zh:       概率论
+    zh-Hans:  概率论
+    zh-Hant:  概率论
+sidebar:
+    nav: Probability
+---
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "probability" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

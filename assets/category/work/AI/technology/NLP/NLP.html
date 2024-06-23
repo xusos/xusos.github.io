@@ -1,0 +1,23 @@
+---
+layout: articles
+titles:
+    en:       Natural Language Processing
+    zh:       自然语言处理
+    zh-Hans:  自然语言处理
+    zh-Hant:  自然语言处理
+sidebar:
+    nav: NLP
+---
+
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "NLP" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

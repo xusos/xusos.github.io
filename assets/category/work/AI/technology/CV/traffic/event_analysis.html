@@ -1,0 +1,23 @@
+---
+layout: articles
+titles:
+    en:       Traffic Event Analysis
+    zh:       路况分析
+    zh-Hans:  路况分析
+    zh-Hant:  路况分析
+sidebar:
+    nav: Traffic
+---
+
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "traffic_event_analysis" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

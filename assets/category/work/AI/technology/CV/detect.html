@@ -1,0 +1,23 @@
+---
+layout: articles
+titles:
+    en:       Object Detect
+    zh:       目标检测
+    zh-Hans:  目标检测
+    zh-Hant:  目标检测
+sidebar:
+    nav: CV
+---
+
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "detection" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

@@ -1,0 +1,23 @@
+---
+layout: articles
+titles:
+    en:       Digital Watermarking
+    zh:       数字指纹
+    zh-Hans:  数字指纹
+    zh-Hant:  数字指纹
+sidebar:
+    nav: Security
+---
+
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "digital_watermarking" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

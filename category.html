@@ -1,0 +1,61 @@
+---
+layout: articles
+titles:
+    en:       Articles Category
+    zh:       文章分类
+    zh-Hans:  文章分类
+    zh-Hant:  文章分類
+---
+
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] != "-" %}
+            <h3 >{{cat.first}} [{{cat.last.size}}]</h3>
+            {% for post in cat[1] %}
+            <li>
+               {{post.date | date:"%Y-%m-%d"}}
+               <font size="4"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+            </li>
+            {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>
+
+<p id="o"></p>
+<p id="demo"></p>
+
+
+<script>
+function getCategory(curTag)
+{
+    var dataStr = '{ {% for cat in site.categories %}{% if cat[0] != site.categories.first[0] %},{% endif %}"{{ cat[0] }}":[{% for post in cat[1] %}{% if post != cat[1].first %},{% endif %}{"url":"{{post.url}}", "title":"{{post.title}}", "date":"{{post.date | date:"%d/%m/%Y"}}"}{% endfor %}]{% endfor %} }'
+    var data = JSON.parse(dataStr)
+    //var curTag = "Caffe"
+    var archieves = data[curTag]
+    //curTag = $.query.get("cat")
+    return JSON.stringify(archieves)
+}
+//document.getElementById("o").innerHTML = getCategory("工具");
+</script>
+
+<script>
+function checkStr(str)
+{
+    var index = -1;
+    var reg = RegExp(/-/);
+    if(str.match(reg)){
+        index = 1      
+    }
+    return index
+}
+//document.getElementById("o").innerHTML = getCategory("工具");
+</script>
+
+<script>
+
+function demo(){
+  return "cooppl"
+}
+//document.getElementById("demo").innerHTML = demo();
+ </script>

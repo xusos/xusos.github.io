@@ -1,0 +1,23 @@
+---
+layout: articles
+titles:
+    en:       Data Mining
+    zh:       数据挖掘
+    zh-Hans:  数据挖掘
+    zh-Hant:  数据挖掘
+sidebar:
+    nav: DM
+---
+
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "data_mining" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

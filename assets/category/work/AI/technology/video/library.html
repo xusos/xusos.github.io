@@ -1,0 +1,23 @@
+---
+layout: articles
+titles:
+    en:       Third party Library
+    zh:       第三方库
+    zh-Hans:  第三方库
+    zh-Hant:  第三方库
+sidebar:
+    nav: Video
+---
+
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "video_library" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

@@ -1,0 +1,22 @@
+---
+layout: articles
+titles:
+    en:       Audio Analysis
+    zh:       语音分析
+    zh-Hans:  语音分析
+    zh-Hant:  语音分析
+sidebar:
+    nav: AUDIO
+---
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "audio" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

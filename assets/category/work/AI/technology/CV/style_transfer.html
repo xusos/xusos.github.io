@@ -1,0 +1,23 @@
+---
+layout: articles
+titles:
+    en:       Style Transfer
+    zh:       风格迁移
+    zh-Hans:  风格迁移
+    zh-Hant:  风格迁移
+sidebar:
+    nav: CV
+---
+
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "style_transfer" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

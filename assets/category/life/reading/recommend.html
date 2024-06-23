@@ -1,0 +1,23 @@
+---
+layout: articles
+titles:
+    en:       Recommend Book
+    zh:       推荐书籍
+    zh-Hans:  推荐书籍
+    zh-Hant:  推荐书籍
+sidebar:
+    nav: CV
+---
+
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "b_recommend" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

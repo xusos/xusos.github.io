@@ -1,0 +1,23 @@
+---
+layout: articles
+titles:
+    en:       Image Deblur
+    zh:       图像去模糊
+    zh-Hans:  图像去模糊
+    zh-Hant:  图像去模糊
+sidebar:
+    nav: CV
+---
+
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "image_deblur" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

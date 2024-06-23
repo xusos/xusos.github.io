@@ -1,0 +1,23 @@
+---
+layout: articles
+titles:
+    en:       Feature Engineering
+    zh:       特征工程
+    zh-Hans:  特征工程
+    zh-Hant:  特征工程
+sidebar:
+    nav: ML
+---
+
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "feature_engineering" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

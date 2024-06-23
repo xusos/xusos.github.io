@@ -1,0 +1,23 @@
+---
+layout: articles
+titles:
+    en:       Embeded Device
+    zh:       嵌入式设备
+    zh-Hans:  嵌入式设备
+    zh-Hant:  嵌入式设备
+sidebar:
+    nav: DEVICE
+---
+
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "device" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

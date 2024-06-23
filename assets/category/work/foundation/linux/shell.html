@@ -1,0 +1,22 @@
+---
+layout: articles
+titles:
+    en:       Shell
+    zh:       Shell
+    zh-Hans:  Shell
+    zh-Hant:  Shell
+sidebar:
+    nav: Linux
+---
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "Shell" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

@@ -1,0 +1,23 @@
+---
+layout: articles
+titles:
+    en:       swift
+    zh:       swift
+    zh-Hans:  swift
+    zh-Hant:  swift
+sidebar:
+    nav: Software
+---
+
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "swift" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

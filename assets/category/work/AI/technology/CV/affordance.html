@@ -1,0 +1,23 @@
+---
+layout: articles
+titles:
+    en:       Visual Affordance
+    zh:       视觉可供性
+    zh-Hans:  视觉可供性
+    zh-Hant:  视觉可供性
+sidebar:
+    nav: CV
+---
+
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "affordance" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

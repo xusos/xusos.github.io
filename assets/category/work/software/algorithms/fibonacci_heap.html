@@ -1,0 +1,23 @@
+---
+layout: articles
+titles:
+    en:       Fibonacci Heap
+    zh:       非波那契堆
+    zh-Hans:  非波那契堆
+    zh-Hant:  非波那契堆
+sidebar:
+    nav: DataStructure
+---
+
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "fibonacci_heap" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

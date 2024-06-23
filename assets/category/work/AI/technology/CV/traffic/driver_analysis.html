@@ -1,0 +1,23 @@
+---
+layout: articles
+titles:
+    en:       Driver Analysis
+    zh:       驾驶员分析
+    zh-Hans:  驾驶员分析
+    zh-Hant:  驾驶员分析
+sidebar:
+    nav: Traffic
+---
+
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "driver_analysis" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

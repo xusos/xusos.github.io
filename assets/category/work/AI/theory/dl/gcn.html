@@ -1,0 +1,22 @@
+---
+layout: articles
+titles:
+    en:       Graph Convolutional Networks
+    zh:       图卷积网络
+    zh-Hans:  图卷积网络
+    zh-Hant:  图卷积网络
+sidebar:
+    nav: DL
+---
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "GCN" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

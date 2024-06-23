@@ -1,0 +1,22 @@
+---
+layout: articles
+titles:
+    en:       Convolutional Networks
+    zh:       卷积网络
+    zh-Hans:  卷积网络
+    zh-Hant:  卷积网络
+sidebar:
+    nav: DL
+---
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "CNN" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

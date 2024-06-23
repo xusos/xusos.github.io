@@ -1,0 +1,22 @@
+---
+layout: articles
+titles:
+    en:       Vectors
+    zh:       向量
+    zh-Hans:  向量
+    zh-Hant:  向量
+sidebar:
+    nav: LinearAlgebra
+---
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "la_vector" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

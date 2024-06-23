@@ -1,0 +1,23 @@
+---
+layout: articles
+titles:
+    en:       BackTracking Algorithms
+    zh:       回溯
+    zh-Hans:  回溯
+    zh-Hant:  回溯
+sidebar:
+    nav: DataStructure
+---
+
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "back_tracking" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

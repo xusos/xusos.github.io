@@ -1,0 +1,23 @@
+---
+layout: articles
+titles:
+    en:       Point Cloud
+    zh:       点云
+    zh-Hans:  点云
+    zh-Hant:  点云
+sidebar:
+    nav: 3D
+---
+
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "point_cloud" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

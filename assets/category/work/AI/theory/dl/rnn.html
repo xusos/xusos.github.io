@@ -1,0 +1,23 @@
+---
+layout: articles
+titles:
+    en:       Recurrent and Recursive Networks
+    zh:       循环神经网络
+    zh-Hans:  循环神经网络
+    zh-Hant:  循环神经网络
+sidebar:
+    nav: DL
+---
+
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "RNN" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

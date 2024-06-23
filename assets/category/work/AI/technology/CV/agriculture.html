@@ -1,0 +1,23 @@
+---
+layout: articles
+titles:
+    en:       Computer Vision·Agriculture
+    zh:       智慧农业
+    zh-Hans:  智慧农业
+    zh-Hant:  智慧农业
+sidebar:
+    nav: CV
+---
+
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "agriculture" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

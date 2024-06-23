@@ -1,0 +1,23 @@
+---
+layout: articles
+titles:
+    en:       Mxnet
+    zh:       Mxnet
+    zh-Hans:  Mxnet
+    zh-Hant:  Mxnet
+sidebar:
+    nav: DLFramework
+---
+
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "mxnet" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

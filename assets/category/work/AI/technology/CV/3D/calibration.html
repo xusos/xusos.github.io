@@ -1,0 +1,23 @@
+---
+layout: articles
+titles:
+    en:       Calibration
+    zh:       标定
+    zh-Hans:  标定
+    zh-Hant:  标定
+sidebar:
+    nav: 3D
+---
+
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "calibration" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

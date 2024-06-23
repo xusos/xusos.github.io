@@ -1,0 +1,23 @@
+---
+layout: articles
+titles:
+    en:       Tensorflow
+    zh:       Tensorflow
+    zh-Hans:  Tensorflow
+    zh-Hant:  Tensorflow
+sidebar:
+    nav: DLFramework
+---
+
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "tensorflow" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

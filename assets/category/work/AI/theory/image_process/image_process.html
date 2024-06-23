@@ -1,0 +1,23 @@
+---
+layout: articles
+titles:
+    en:       Image Process
+    zh:       数字图像处理
+    zh-Hans:  数字图像处理
+    zh-Hant:  數字圖像處理
+sidebar:
+    nav: ImageProcess
+---
+
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "image_process" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

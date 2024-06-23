@@ -1,0 +1,23 @@
+---
+layout: articles
+titles:
+    en:       Software Debug
+    zh:       软件调试
+    zh-Hans:  软件调试
+    zh-Hant:  软件调试
+sidebar:
+    nav: Software
+---
+
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "debug" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

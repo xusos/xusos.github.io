@@ -1,0 +1,23 @@
+---
+layout: articles
+titles:
+    en:       English Writing
+    zh:       英语写作
+    zh-Hans:  英语写作
+    zh-Hant:  英语写作
+sidebar:
+    nav: English
+---
+
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "writing" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

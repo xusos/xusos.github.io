@@ -1,0 +1,23 @@
+---
+layout: articles
+titles:
+    en:       Object-Oriented Programming
+    zh:       面向对象程序设计
+    zh-Hans:  面向对象程序设计
+    zh-Hant:  面向对象程序设计
+sidebar:
+    nav: Software
+---
+
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "OOP" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

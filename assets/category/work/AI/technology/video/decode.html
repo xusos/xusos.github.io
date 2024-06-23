@@ -1,0 +1,23 @@
+---
+layout: articles
+titles:
+    en:       Video Decode
+    zh:       视频解码
+    zh-Hans:  视频解码
+    zh-Hant:  视频解码
+sidebar:
+    nav: Video
+---
+
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "video_decode" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

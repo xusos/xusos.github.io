@@ -1,0 +1,23 @@
+---
+layout: articles
+titles:
+    en:       Facial Inpaint
+    zh:       人脸修复
+    zh-Hans:  人脸修复
+    zh-Hant:  人脸修复
+sidebar:
+    nav: Human
+---
+
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "facial_inpaint" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

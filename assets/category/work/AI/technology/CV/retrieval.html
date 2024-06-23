@@ -1,0 +1,23 @@
+---
+layout: articles
+titles:
+    en:       Image Retrieval
+    zh:       图片检索
+    zh-Hans:  图片检索
+    zh-Hant:  图片检索
+sidebar:
+    nav: CV
+---
+
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "retrieval" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

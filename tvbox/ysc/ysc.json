@@ -1,5 +1,5 @@
 {
-  "spider": "./tvbox/ysc/ok.jar",
+  "spider": "./tvbox/ysc/ok.jar;md5;ce9acb8ff6452cf228f86abf98f28fa0",
   "wallpaper": "https://tuapi.eees.cc/api.php?category=fengjing&type=302",
   "sites": [
     {

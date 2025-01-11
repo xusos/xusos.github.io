@@ -1,5 +1,5 @@
 {
-  "spider": "./tvbox/jar/top98_1.jar",
+  "spider": "./tvbox/junge/jar/top98_1.jar",
   "lives": [
     {
       "name": "直播",

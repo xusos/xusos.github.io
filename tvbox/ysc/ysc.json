@@ -1,5 +1,5 @@
 {
-  "spider": "./ok.jar;md5;69c0dc9473ef7184b564d79884406f7a",
+  "spider": "./tvbox/ysc/ok.jar;md5;69c0dc9473ef7184b564d79884406f7a",
   "wallpaper": "https://tuapi.eees.cc/api.php?category=fengjing&type=302",
   "sites": [
     {
@@ -27,8 +27,8 @@
       "key": "4K影院",
       "name": "♨️4K®在线",
       "type": 3,
-      "api": "./js/lib/drpy2.min.js",
-      "ext": "./js/4kav.js"
+      "api": "./tvbox/ysc/js/lib/drpy2.min.js",
+      "ext": "./tvbox/ysc/js/4kav.js"
     },
     {
       "key": "bilimd",
@@ -51,8 +51,8 @@
       "key": "瓜子app",
       "name": "♨️瓜子®APP",
       "type": 3,
-      "api": "./js/lib/drpy2.min.js",
-      "ext": "./js/guazi.js"
+      "api": "./tvbox/ysc/js/lib/drpy2.min.js",
+      "ext": "./tvbox/ysc/js/guazi.js"
     },
     {
       "key": "韩圈",
@@ -196,22 +196,22 @@
       "key": "素白秒播",
       "name": "🚛素白┃秒播",
       "type": 3,
-      "api": "./js/lib/drpy2.min.js",
-      "ext": "./js/subaibai.js"
+      "api": "./tvbox/ysc/js/lib/drpy2.min.js",
+      "ext": "./tvbox/ysc/js/subaibai.js"
     },
     {
       "key": "闪雷影院",
       "name": "🚛闪雷┃秒播",
       "type": 3,
-      "api": "./js/lib/drpy2.min.js",
-      "ext": "./js/shanlei.js"
+      "api": "./tvbox/ysc/js/lib/drpy2.min.js",
+      "ext": "./tvbox/ysc/js/shanlei.js"
     },
     {
       "key": "金牌",
       "name": "🚛金牌┃秒播",
       "type": 3,
-      "api": "./js/lib/drpy2.min.js",
-      "ext": "./js/jpys.js"
+      "api": "./tvbox/ysc/js/lib/drpy2.min.js",
+      "ext": "./tvbox/ysc/js/jpys.js"
     },
     {
       "key": "骚火",
@@ -221,7 +221,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "./json/saohuo.json"
+      "ext": "./tvbox/ysc/json/saohuo.json"
     },
     {
       "key": "荐片",
@@ -272,8 +272,8 @@
       "key": "JRKAN直播",
       "name": "⚽JRKAN直播",
       "type": 3,
-      "api": "./js/lib/drpy2.min.js",
-      "ext": "./js/jrkan.js"
+      "api": "./tvbox/ysc/js/lib/drpy2.min.js",
+      "ext": "./tvbox/ysc/js/jrkan.js"
     },
     {
       "key": "88看球",
@@ -305,7 +305,7 @@
       "key": "虎牙直播",
       "name": "🐯虎牙直播",
       "type": 3,
-      "api": "./js/lib/drpy2.min.js",
+      "api": "./tvbox/ysc/js/lib/drpy2.min.js",
       "searchable": 0,
       "quickSearch": 0,
       "filterable": 1,
@@ -313,13 +313,13 @@
         "type": "rect",
         "ratio": 1.433
       },
-      "ext": "./js/huya.js"
+      "ext": "./tvbox/ysc/js/huya.js"
     },
     {
       "key": "哔哩直播",
       "name": "🅱️哔哩直播",
       "type": 3,
-      "api": "./js/lib/drpy2.min.js",
+      "api": "./tvbox/ysc/js/lib/drpy2.min.js",
       "searchable": 0,
       "quickSearch": 0,
       "filterable": 1,
@@ -327,21 +327,21 @@
         "type": "rect",
         "ratio": 1.433
       },
-      "ext": "./js/blzb.js"
+      "ext": "./tvbox/ysc/js/blzb.js"
     },
     {
       "key": "星芽短剧",
       "name": "♨️星芽®短剧",
       "type": 3,
-      "api": "./js/lib/drpy2.min.js",
-      "ext": "./js/xingya.js"
+      "api": "./tvbox/ysc/js/lib/drpy2.min.js",
+      "ext": "./tvbox/ysc/js/xingya.js"
     },
     {
       "key": "蓝莓短剧",
       "name": "♨️蓝莓®短剧",
       "type": 3,
-      "api": "./js/lib/drpy2.min.js",
-      "ext": "./js/lanmei.js"
+      "api": "./tvbox/ysc/js/lib/drpy2.min.js",
+      "ext": "./tvbox/ysc/js/lanmei.js"
     },
     {
       "key": "河马剧场",
@@ -352,7 +352,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "playerType": 2,
-      "ext": "./json/hema.json"
+      "ext": "./tvbox/ysc/json/hema.json"
     },
     {
       "key": "你好帅",
@@ -370,14 +370,14 @@
       "name": "🚛爱我┃短剧",
       "type": 3,
       "api": "csp_XBPQ",
-      "ext": "./json/awdj.json"
+      "ext": "./tvbox/ysc/json/awdj.json"
     },
     {
       "key": "夸克短剧",
       "name": "🚛夸克┃短剧",
       "type": 3,
-      "api": "./js/lib/drpy2.min.js",
-      "ext": "./js/quarkdj.js"
+      "api": "./tvbox/ysc/js/lib/drpy2.min.js",
+      "ext": "./tvbox/ysc/js/quarkdj.js"
     },
     {
       "key": "纸条",

@@ -1,9 +1,11 @@
 {%- if jekyll.environment != 'development' -%}
-  {%- if site.analytics.provider == 'google' -%}
+  {%- if site.analytics.google.tracking_id -%}
     {%- include analytics-providers/google.html -%}
-  {%- elsif site.analytics.provider == 'adsense' -%}
+  {%- endif -%}
+  {%- if site.analytics.adsense.tracking_id -%}
     {%- include analytics-providers/adsense.html -%}
-  {%- elsif site.analytics.provider == 'custom' -%}
+  {%- endif -%}
+  {%- if site.analytics.provider == 'custom' -%}
     {%- include analytics-providers/custom.html -%}
   {%- endif -%}
 {%- endif -%}

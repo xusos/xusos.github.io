@@ -198,16 +198,10 @@ layout: base
                 {%- endif -%}
 
                     <div class="js-article-content">
-                      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                      <ins class="adsbygoogle"
-                          style="display:block; text-align:center;"
-                          data-ad-layout="in-article"
-                          data-ad-format="fluid"
-                          data-ad-client="ca-pub-1334509736068927"
-                          data-ad-slot="4348838154"></ins>
-                      <script>
-                          (adsbygoogle = window.adsbygoogle || []).push({});
-                      </script>
+                            <!-- 可以添加广告代码 -->
+                      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1334509736068927"
+                         crossorigin="anonymous"></script>
+                      
                       {{ content }}</div>
                     {%- if jekyll.environment != "development" and _comment != false -%}
                       <section class="page__comments">{%- include comments.html -%}</section>

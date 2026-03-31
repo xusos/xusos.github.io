@@ -160,14 +160,16 @@ pageview:
 ## => Analytics
 ##############################
 analytics:
-  provider: google # false (default), "google", "custom"
+  provider: false # false (default), "google", "custom", "adsense"
 
   ## Google Analytics
   google:
     tracking_id : G-9JCK5DP9E6 # Google Analytics id for the site
     anonymize_ip: true # Anonymize IP tracking for Analytics
 
-
+## AdSense
+  adsense:
+    tracking_id: ca-pub-1334509736068927 # AdSense Publisher ID
 ## => Build
 ##############################
 markdown    : kramdown

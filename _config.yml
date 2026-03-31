@@ -164,7 +164,7 @@ analytics:
 
   ## Google Analytics
   google:
-    tracking_id : UA-52772343-4 # Google Analytics id for the site
+    tracking_id : G-9JCK5DP9E6 # Google Analytics id for the site
     anonymize_ip: true # Anonymize IP tracking for Analytics
 
 

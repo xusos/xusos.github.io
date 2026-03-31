@@ -1,7 +1,7 @@
 {%- if jekyll.environment != 'development' -%}
   {%- if site.analytics.provider == 'google' -%}
     {%- include analytics-providers/google.html -%}
-  {%- if site.analytics.provider == 'adsense' -%}
+  {%- elsif site.analytics.provider == 'adsense' -%}
     {%- include analytics-providers/adsense.html -%}
   {%- elsif site.analytics.provider == 'custom' -%}
     {%- include analytics-providers/custom.html -%}
